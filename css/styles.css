@@ -12921,3 +12921,92 @@ div.ex1 {
         opacity: 1;
     }
 }
+
+/* The message box is shown when the user clicks on the password field */
+/* #message {
+  display:none;
+  background: #f1f1f1;
+  color: #000;
+  position: relative;
+  padding: 20px;
+  margin-top: 10px;
+} */
+
+/* #message p {
+  padding: 10px 35px;
+  font-size: 18px;
+} */
+
+/* Add a green text color and a checkmark when the requirements are right */
+.valid {
+  color: green;
+}
+
+.valid:before {
+  position: relative;
+  /* left: -35px; */
+  content: "✔";
+}
+
+/* Add a red text color and an "x" when the requirements are wrong */
+.invalid {
+  color: red;
+  font-weight: normal;
+}
+
+.invalid:before {
+  position: relative;
+  /* left: -35px; */
+  content: "✖";
+}
+
+
+/* Mark input boxes that gets an error on validation: */
+input.invalid {
+  background-color: #ffdddd;
+}
+
+/* Hide all steps by default: */
+.tab {
+  display: none;
+}
+
+#prevBtn {
+  background-color: #703589;
+}
+
+#nextBtn {
+  background-color: #703589;
+}
+
+
+/* Make circles that indicate the steps of the form: */
+.step {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: grey;
+  border: none;  
+  border-radius: 50%;
+  display: inline-block;
+  opacity: 0.5;
+}
+
+.step.active {
+  opacity: 1;
+}
+
+/* Mark the steps that are finished and valid: */
+.step.finish {
+  background-color: #703589;
+}
+
+.formcontrol small {
+  color: #e74c3c;
+  margin-left: 3%;
+  visibility: hidden;
+}
+
+.formcontrol.error small {
+  visibility: visible;
+}
