@@ -54,86 +54,168 @@
             </section>
         </header>
         <!-- <div class="center"> -->
-            <div class="containers" style="height:670px; margin-bottom:50px;  margin-top:50px">
-                <div class="card" style="height:730px;">
+        <div class="containers" style="height:900px; margin-bottom:50px;  margin-top:50px">
+            <div class="card" style="height:850px;">
                 <img src="..//assets/img/Iteams_logo.png" style="width:150px; height:30px; margin-left: 90px;"
                     alt="logo">
                 <!-- Sign In Form -->
-                <form action="..//HTML/signUp2.html">
-                    <div class="container">
-                        <h1 style="text-align:center; margin-top:5%; font-size:large; color: #000000;">Welcome to
-                            ITeams!</h1>
-                        <p style="text-align:center; color: #313C41;">Already have an account? <a
-                                href="..//HTML/logIn.html" style="color:#703589">Log In</a></p>
-                        <!--textbox-->
-                        <label for="firstname"><b style=color:#313C41>First Name</b></label><span style="color:#703589"> *</span>
-                        <label for="lastname"><b style="color:#313C41; margin-left: 85px;">Last Name</b></label><span style="color:#703589"> *</span>
-                        <br />
-                        <input type="text" id="firstname" name="firstname" placeholder="First Name" required="required";
-                            style="width:135px">
-                        <!--textbox-->
-                        <input type="text" id="lastname" name="lastname" placeholder="Last Name" required="required"
-                            style="width:135px; margin-left:30px">
+                <div class="container rform">
+                    <h1 style="text-align:center; margin-top:5%; font-size:large; color: #000000;">Welcome to
+                        ITeams!</h1>
+                    <p style="text-align:center; color: #313C41;">Already have an account? <a href="..//HTML/logIn.html"
+                            style="color:#703589">Log In</a></p>
+
+                    <form action="..//HTML/profile.html" id="regForm">
+                        <div class="tab" style="display: block;">
+                            <!--Subheading-->
+                            <b style=color:#313C41>Step 1: Account Information</b>
                             <div class="dropdown-divider"></div>
 
-                        <!--textbox-->
-                        <label for="firstname"><b style=color:#313C41;>Phone Number</b></label><span style="color:#703589"> *</span>
-                        <input type="text" id="Phone" name="Phone" style="width:100%;" placeholder="05********"
-                            required="required">
-                            <div class="dropdown-divider"></div>
+                            <!--textbox-->
+                            <div class="formcontrol">
+                                <label for="email"><b style=color:#313C41>Email</b></label><span style="color:#703589">
+                                    *</span>
+                                <input type="email" id="Email" name="Email" placeholder="Enter Email"
+                                    style="width: 100%; height: 50px;">
+                                <i class="fas fa-check-circle"></i>
+                                <i class="fas fa-exclamation-circle"></i>
+                                <small>Error message</small>
+                            </div>
+                            <!--textbox-->
+                            <div class="formcontrol">
+                                <label for="psw"><b style=color:#313C41>Password</b></label><span style="color:#703589">
+                                    *</span>
+                                <input type="password" id="Password" name="Password" placeholder="Enter Password"
+                                    style="width: 100%; height: 50px;">
+                                <i class="fas fa-check-circle"></i>
+                                <i class="fas fa-exclamation-circle"></i>
+                                <small>Error message</small>
 
-                        <!--radio button-->
-                        <div class="formcontrol">
-                            <label for="firstname"><b style=color:#313C41;>Gender</b></label><span style="color:#703589"> *</span>
-                            <input type="radio" id="Male" name="Gender" value="Male" style="margin-left: 9%;margin-top: 5%;">
-                            <label for="Male" style=color:#313C41;>Male</label>
-                            <!--radio button-->
-                            <input type="radio" id="Female" name="Gender" value="Female" style="margin-left: 3%;margin-top: 5%;">
-                            <label for="Female" style=color:#313C41;>Female</label><br>
+                                <div id="message" style="font-weight: normal; margin-top: 0; padding: 0;">
+                                    <div>Password must contain the following:</div>
+                                    <div id="letter" class="invalid">Lowercase letter</div>
+                                    <div id="capital" class="invalid">Uppercase letter</div>
+                                    <div id="number" class="invalid">number</div>
+                                    <div id="length" class="invalid">Minimum 8 characters</div>
+                                </div>
+                                <br>
+                            </div>
+                            <!--textbox-->
+                            <div class="formcontrol">
+                                <label for="psw-repeat"><b style=color:#313C41>Repeat Password</b></label><span
+                                    style="color:#703589"> *</span>
+                                <input type="password" id="ConfPassword" name="ConfPassword"
+                                    placeholder="Repeat Password" style="width: 100%; height: 50px;">
+                                <i class="fas fa-check-circle"></i>
+                                <i class="fas fa-exclamation-circle"></i>
+                                <small>Error message</small>
+                            </div>
                         </div>
-                        <div class="dropdown-divider"></div>
+                        <div class="tab">
+                            <!--Subheading-->
+                            <b style=color:#313C41>Step 2: Personal Information</b>
+                            <div class="dropdown-divider"></div>
+                            <!--textbox-->
+                            <div class="formcontrol">
+                                <label for="fname"><b style=color:#313C41>First Name</b></label><span
+                                    style="color:#703589"> *</span>
+                                <input type="text" id="firstname" name="firstname" placeholder="First Name"
+                                    style="width: 100%; height: 50px;">
+                                <i class="fas fa-check-circle"></i>
+                                <i class="fas fa-exclamation-circle"></i>
+                                <small>Error message</small>
+                            </div>
+                            <!--textbox-->
+                            <div class="formcontrol">
+                                <label for="lname"><b style=color:#313C41>Last Name</b></label><span
+                                    style="color:#703589"> *</span>
+                                <input type="text" id="lastname" name="lastname" placeholder="Last Name"
+                                    style="width: 100%; height: 50px;">
+                                <i class="fas fa-check-circle"></i>
+                                <i class="fas fa-exclamation-circle"></i>
+                                <small>Error message</small>
+                            </div>
+                            <!--radio button-->
+                            <div class="formcontrol">
+                                <label for="gender"><b style=color:#313C41>Gender</b></label><span
+                                    style="color:#703589"> *</span>
+                                <input type="radio" id="Male" name="Gender" value="Male"
+                                    style="margin-left: 9%;margin-top: 5%;">
+                                <label for="Male" style="color:#313C41">Male</label>
+                                <!--radio button-->
+                                <input type="radio" id="Female" name="Gender" value="Female"
+                                    style="margin-left: 3%;margin-top: 5%;">
+                                <label for="Female" style="color:#313C41">Female</label><br>
+                                <small>Error message</small>
+                            </div>
+                            <!--textbox-->
+                            <div class="formcontrol">
+                                <label for="phone"><b style=color:#313C41>Phone Number</b></label><span
+                                    style="color:#703589"> *</span>
+                                <input type="text" id="Phone" name="Phone" placeholder="05********"
+                                    oninput="this.className = ''" required>
+                                <i class="fas fa-check-circle"></i>
+                                <i class="fas fa-exclamation-circle"></i>
+                                <small>Error message</small>
+                            </div>
+                        </div>
+                        <div class="tab">
+                            <!--Subheading-->
+                            <b style=color:#313C41>Step 3: Profile Information</b>
+                            <div class="dropdown-divider"></div>
+                            <!--textbox-->
+                            <div class="formcontrol">
+                                <!--dropdown select-->
+                                <label for="education"><b style=color:#313C41>Education</b></label><span
+                                    style="color:#703589"> *</span>
+                                <br />
+                                <select id="education" name="education" style="width: 100%; height:40px" required>
+                                    <option value="" disabled selected value>-- Please select --</option>
+                                    <option value="01">Undergraduate</option>
+                                    <option value="02">Bachelor Degree</option>
+                                    <option value="03">Master Degree</option>
+                                    <option value="04">Doctoral Degree</option>
+                                </select>
+                                <i class="fas fa-check-circle"></i>
+                                <i class="fas fa-exclamation-circle"></i>
+                                <small>Error message</small>
+                            </div>
 
-                        <label for="email"><b style=color:#313C41>Email</b></label><span style="color:#703589"> *</span>
-                        <input type="text" placeholder="Enter Email" name="email" required>
-                        <div class="dropdown-divider"></div>
+                            <div class="formcontrol">
+                                <!--dropdown select-->
+                                <label for="skills"><b style=color:#313C41>Skills</b></label><span
+                                    style="color:#703589"> *</span>
+                                <br />
+                                <select id="skills" name="skills" style="width: 100%; height:40px" required>
+                                    <option value="" disabled selected value>-- Please select --</option>
+                                    <option value="01">a</option>
+                                    <option value="02">b</option>
+                                    <option value="03">c</option>
+                                    <option value="04">d</option>
+                                </select>
+                                <i class="fas fa-check-circle"></i>
+                                <i class="fas fa-exclamation-circle"></i>
+                                <small>Error message</small>
+                            </div>
 
-                        <label for="psw"><b style=color:#313C41>Password</b></label><span style="color:#703589"> *</span>
-                        <input type="password" placeholder="Enter Password" name="psw" required>
-                        <!--dropdown select-->
-                        <!-- Age <span>*</span>
-                        <select id="Age" name="Age" style="width: 35%; margin-left: 13%; margin-top: 5%;">
-                            <option value="01">18</option>
-                            <option value="02">19</option>
-                            <option value="03">20</option>
-                            <option value="04">21</option>
-                            <option value="05">22</option>
-                            <option value="06">23</option>
-                            <option value="07">24</option>
-                            <option value="08">25</option>
-                            <option value="09">26</option>
-                            <option value="10">27</option>
-                            <option value="11">28</option>
-                            <option value="12">29</option>
-                            <option value="13">30</option>
-                            <option value="14">31</option>
-                            <option value="15">32</option>
-                            <option value="16">33</option>
-                            <option value="17">34</option>
-                            <option value="18">35</option>
-                            <option value="19">36</option>
-                            <option value="20">37</option>
-                            <option value="21">38</option>
-                            <option value="22">39</option>
-                            <option value="23">40</option>
-                        </select> <br> -->
-<br/>
-<br/>
-                            <input type="submit" value="Continue" style="width:100%">
-                    </div>
-                </form>
+                        </div>
+                        <div style="overflow:auto;">
+                            <div>
+                                <button type="button" id="prevBtn" style="display:none;"
+                                    onclick="nextPrev(-1)">Previous</button>
+                                <button type="button" id="nextBtn" onclick="nextPrev(1)">Next</button>
+                            </div>
+                        </div>
+                        <!-- Circles which indicates the steps of the form: -->
+                        <div style="text-align:center;margin-top:40px;">
+                            <span class="step"></span>
+                            <span class="step"></span>
+                            <span class="step"></span>
+                        </div>
+                    </form>
+                </div>
             </div>
-        </div>
-    <!-- </div> -->
+
     </main>
 
     <!-- Footer-->
@@ -156,7 +238,7 @@
     <!-- Bootstrap core JS-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Core theme JS-->
-    <script src="js/scripts.js"></script>
+    <script src="../js/validation.js"></script>
 </body>
 
 </html>
