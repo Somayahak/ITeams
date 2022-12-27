@@ -26,11 +26,11 @@ if(mysqli_num_rows($duplicate) > 0){
   "<script> alert('Username or Email Has Already Taken'); </script>";
 }
 else{
-    $query = "INSERT INTO users VALUES('1','$firstname','$lastname','$Email','$Password','$Phone','$Gender','$education',NULL,,NULL,NULL,NULL,NULL)";
+    $query = "INSERT INTO users VALUES('1','$firstname','$lastname','$Email','$Password','$Phone','$Gender','$education',NULL,NULL,NULL,NULL,NULL)";
     mysqli_query($conn, $query);
       echo "<script>
       alert('Registration Successful');
-      window.location.href='..//HTML/SignIn.html';
+      window.location.href='..//HTML/profile.html';
       </script>";
   }
 
