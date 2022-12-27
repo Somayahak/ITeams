@@ -1,6 +1,6 @@
 <?php
-$username = filter_input(INPUT_POST, 'username');
-$password = filter_input(INPUT_POST, 'password');
+$username = filter_input(INPUT_POST, 'email');
+$password = filter_input(INPUT_POST, 'psw');
 if (!empty($username)){
 if (!empty($password)){
 $host = "sql6.freesqldatabase.com";
