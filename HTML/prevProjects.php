@@ -13,19 +13,19 @@ else{
 }
 
 	// insert a quote if submit button is clicked
-if (isset($_POST['add'])) {
-	if (empty($_POST['prevProjectDescription']) || empty($_POST['projectName'])) {
-		$errors = "You must fill in the project name and description";
-	}else{
-$projectUserId=$row["userId"];
-$projectName = $_POST['projectName'];
-$prevProjectDescription = $_POST['prevProjectDescription'];
-$sql = "INSERT INTO userPrevProjects (projectUserId,prevProjectName,prevProjectDescription) VALUES ($projectUserId,'$projectName','$prevProjectDescription')";
-mysqli_query($conn, $sql);
-// window.location.href='..//HTML/profile.php';
+// if (isset($_POST['add'])) {
+// 	if (empty($_POST['prevProjectDescription']) || empty($_POST['projectName'])) {
+// 		$errors = "You must fill in the project name and description";
+// 	}else{
+// $projectUserId=$row["userId"];
+// $projectName = $_POST['projectName'];
+// $prevProjectDescription = $_POST['prevProjectDescription'];
+// $sql = "INSERT INTO userPrevProjects (projectUserId,prevProjectName,prevProjectDescription) VALUES ($projectUserId,'$projectName','$prevProjectDescription')";
+// mysqli_query($conn, $sql);
+// // window.location.href='..//HTML/profile.php';
             
-		}
-	}
+// 		}
+// 	}
     // delete task
 // if (isset($_GET['del_task'])) {
 // 	$id = $_GET['del_task'];
