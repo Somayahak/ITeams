@@ -20,9 +20,10 @@ if (isset($_POST['add'])) {
 		$errors = "You must fill in the project name and description";
 	}else{
 $errors = "";
-$projectUserId=$row["userId"];
-$projectName = $_POST['projectName'];
-$prevProjectDescription = $_POST['prevProjectDescription'];
+window.location.href='..//HTML/logIn.html';
+// $projectUserId=$row["userId"];
+// $projectName = $_POST['projectName'];
+// $prevProjectDescription = $_POST['prevProjectDescription'];
 // $sql = "INSERT INTO userPrevProjects (projectUserId,prevProjectName,prevProjectDescription) VALUES ($projectUserId,'$projectName','$prevProjectDescription')";
 // mysqli_query($conn, $sql);
             
