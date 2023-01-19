@@ -3,7 +3,7 @@ require '../php/connect.php';
 
 if(!empty($_SESSION["Email"])){
     $Email = $_SESSION["Email"];
-    $userId = $_SESSION["userId"];
+    $userId = $_SESSION["user_id"];
     $query = "SELECT * FROM users WHERE email = '{$Email}'";
     $result = mysqli_query($conn, $query);
     $row = mysqli_fetch_assoc($result); 
@@ -176,7 +176,7 @@ else{
                     <a href="..//HTML/myProjects.php" style="font-size: 13px; color:#703589; margin-left:35%;"> More</a>   
                         <?php 
                         // select all tasks if page is visited or refreshed
-                        $prvproject = mysqli_query($conn, "SELECT * FROM userPrevProjects WHERE projectUserId=$userId");
+                        $prvproject = mysqli_query($conn, "SELECT * FROM userPrevProjects WHERE projectUserId='{$userId}'");
 
                     $i = 1; while ($row = mysqli_fetch_array($prvproject)) { ?>
 
