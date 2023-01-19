@@ -6,6 +6,7 @@ if(!empty($_SESSION["Email"])){
     $query = "SELECT * FROM users WHERE email = '{$Email}'";
     $result = mysqli_query($conn, $query);
     $row = mysqli_fetch_assoc($result); 
+    $errors = "";
 }
 else{
   header("..//HTML/logIn.html");
@@ -16,7 +17,6 @@ if (isset($_POST['add'])) {
 	if (empty($_POST['prevProjectDescription']) || empty($_POST['projectName'])) {
 		$errors = "You must fill in the project name and description";
 	}else{
-$errors = "";
 $projectUserId=$row["userId"];
 $projectName = $_POST['projectName'];
 $prevProjectDescription = $_POST['prevProjectDescription'];
