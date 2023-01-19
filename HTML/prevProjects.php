@@ -119,7 +119,7 @@ tr:hover {
 }
 </style>
 
-	<form method="post" action="..//HTML/addPrevProject.php">
+	<form method="post" action="..//php/addPrevProject.php">
     <?php if (isset($errors)) { ?>
 	<p><?php echo $errors; ?></p>
     <?php } ?>
