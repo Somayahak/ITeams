@@ -179,7 +179,7 @@ else{
 
                     $i = 1; while ($row = mysqli_fetch_array($prvproject)) { ?>
 
-                        <div class="ex1" style="padding:0; padding-left:5px; font-size:10px; margin-top:3px; height:70px; width:300px; box-shadow: none; background-color:#EFF3F8;border-radius: 4px; text-align: left; border:none; color: #313C41;">
+                        <div onclick="location.href='..//HTML/prevProjects.php';" class="ex1" style="cursor: pointer padding:0; padding-left:5px; font-size:10px; margin-top:10px; height:70px; width:300px; box-shadow: none; background-color:#EFF3F8;border-radius: 4px; text-align: left; border:none; color: #313C41;">
                             <span><td class="task"> <?php echo $row['prevProjectName']; ?> </td></span>
                             <br>
                             <span style="color: grey; font-weight:normal;">
