@@ -173,10 +173,11 @@ else{
 		    <div class='ex1'style="margin-left: 10px; font-size: 15px; color:#703589; margin-bottom: 15px; text-align:left;">
                                     Previous Projects
 
-                    <a href="..//HTML/myProjects.php" style="font-size: 13px; color:#703589; margin-left:35%;"> More</a>   
+                    <a href="..//HTML/myProjects.php" style="font-size: 13px; color:#703589; margin-left:35%;"> More</a>
+			    <?php echo'hi';?>
                         <?php 
                         // select all tasks if page is visited or refreshed
-                        $prvproject = mysqli_query($conn, "SELECT * FROM userPrevProjects WHERE projectUserId='{$userId}'");
+                        $prvproject = mysqli_query($conn, "SELECT * FROM userPrevProjects WHERE projectUserId='30'");
 
                     $i = 1; while ($row = mysqli_fetch_array($prvproject)) { ?>
 
