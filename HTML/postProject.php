@@ -96,7 +96,7 @@ else{
                     
                               
                     <div >
-                        <div class="horizontal_line" style="width: 700px; margin-bottom: 30px;"></div>
+                        <div class="horizontal_line" style="width: 700px; margin-top: 30px;"></div>
                         <!--THE POST PROJECT FOTTER-->
                         <div class="wrapper3" style="grid-gap:290px;margin-top:0.5px;border-radius: 5px;">
                             <!--Budget selector-->
