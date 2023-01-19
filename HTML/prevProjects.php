@@ -23,7 +23,7 @@ $errors = "";
 $projectUserId=$row["userId"];
 $projectName = $_POST['projectName'];
 $prevProjectDescription = $_POST['prevProjectDescription'];
-$sql = "INSERT INTO userPrevProjects (prevProjectId,prevProjectName,prevProjectDescription) VALUES ($projectUserId,'$projectName','$prevProjectDescription')";
+$sql = "INSERT INTO userPrevProjects (projectUserId,prevProjectName,prevProjectDescription) VALUES ($projectUserId,'$projectName','$prevProjectDescription')";
 mysqli_query($conn, $sql);
 // header('location: ..//HTML/profile.php');
             
