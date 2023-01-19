@@ -175,7 +175,11 @@ else{
 
                     <a href="..//HTML/myProjects.php" style="font-size: 13px; color:#703589; margin-left:35%;"> More</a>
 			    <div>
-				    <?php echo'hi';?>
+				    <?php
+				    echo $userId;
+				    echo'hi';
+				    
+				    ?>
 			    </div>
                         <?php 
                         // select all tasks if page is visited or refreshed
