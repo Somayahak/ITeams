@@ -173,13 +173,10 @@ else{
                                     Previous Projects
 
                     <a href="..//HTML/myProjects.php" style="font-size: 13px; color:#703589; margin-left:35%;"> More</a>
-			    <div>
-					<?php echo $row["userId"];?>
-				    
-			    </div>
                         <?php 
                         // select all tasks if page is visited or refreshed
-                        $prvproject = mysqli_query($conn, "SELECT * FROM userPrevProjects WHERE projectUserId='30'");
+			$userId=$row["userId"];
+                        $prvproject = mysqli_query($conn, "SELECT * FROM userPrevProjects WHERE projectUserId='$userId'");
 
                     $i = 1; while ($row = mysqli_fetch_array($prvproject)) { ?>
 
