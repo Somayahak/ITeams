@@ -12,13 +12,21 @@ else{
   header("..//HTML/logIn.html");
 }
 
-	// insert a quote if submit button is clicked
-if (isset($_POST['add'])) {
-	if (empty($_POST['prevProjectDescription']) || empty($_POST['projectName'])) {
-// 		$errors = "You must fill in the project name and description";
-    window.location.href='..//HTML/profile.php';
+//   $duplicate = mysqli_query($conn, "SELECT * FROM users WHERE email = '$Email'");
+//   if(mysqli_num_rows($duplicate) > 0){
+//     echo
+//     "<script> alert('Username or Email Has Already Taken'); 
+//         window.location.href='..//HTML/signUp.php';
+//         </script>";
+//   }
 
-	}else{
+	// insert a quote if submit button is clicked
+// if (isset($_POST['add'])) {
+// 	if (empty($_POST['prevProjectDescription']) || empty($_POST['projectName'])) {
+// // 		$errors = "You must fill in the project name and description";
+//     window.location.href='..//HTML/profile.php';
+
+// 	}else{
 $projectUserId=$row["userId"];
 $projectName = $_POST['projectName'];
 $prevProjectDescription = $_POST['prevProjectDescription'];
@@ -26,6 +34,6 @@ $sql = "INSERT INTO userPrevProjects (projectUserId,prevProjectName,prevProjectD
 mysqli_query($conn, $sql);
 window.location.href='..//HTML/profile.php';
             
-		}
-	}
+// 		}
+// 	}
 ?>
