@@ -166,15 +166,13 @@ else{
                                 style="margin-left:80%; border-radius:20px; padding:2px 8px; background-color: #6CBBD2; font-size:10px; color: white;">View
                             </a>
                         </div>
-                    </div>
-    
-                </div>
-    
-    
-                <div class='ex1'style="margin-left: 10px; font-size: 15px; color:#703589; margin-bottom: 15px; text-align:left;">
+		</div>
+	</div>
+		    
+		    <div class='ex1'style="margin-left: 10px; font-size: 15px; color:#703589; margin-bottom: 15px; text-align:left;">
                                     Previous Projects
 
-                    <a href="..//HTML/myProjects.php" style="font-size: 13px; color:#703589; margin-left:35%;"> More</a> 
+                    <a href="..//HTML/myProjects.php" style="font-size: 13px; color:#703589; margin-left:35%;"> More</a>   
                         <?php 
                         // select all tasks if page is visited or refreshed
                         $prvproject = mysqli_query($conn, "SELECT * FROM userPrevProjects WHERE projectUserId='30'");
@@ -188,18 +186,18 @@ else{
                                 <td class="task"> <?php echo $row['prevProjectDescription']; ?> </td>
                                 </span>
                             <!--<a class="btn" href=""
-                                <!--style="margin-left:80%; border-radius:20px; padding:2px 8px; background-color: #703589; font-size:10px; color: white;">View
+                                style="margin-left:80%; border-radius:20px; padding:2px 8px; background-color: #703589; font-size:10px; color: white;">View
                             </a>-->
-		                <?php $i++; } ?>	
                         </div>
+		                <?php $i++; } ?>	
 
-<button class="btn center" onclick="openForm()" style="border-radius:20px; padding:2px 8px; background-color: #703589; font-size:12px; color: white; width:65%; height:15%"> Add your previous project</button>
+                    <button class="btn center" onclick="openForm()" style="border-radius:20px; padding:2px 8px; background-color: #703589; font-size:12px; color: white; width:65%; height:15%"> Add your previous project</button>
                         <div class="form-popup" id="myForm" style="padding-top:0; text-align:left; width:40%; height:70%; background-color:#EFF3F8;   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
                     <button type="button" class="btn cancel" onclick="closeForm()" style="font-weight:bold; margin-left:93%; background-color: none; font-size:20px; color: grey; width:6%; height:6%">x</button>
                 <?php include("..//HTML/prevProjects.php");?>
+                    </div>
                 </div>
-                </div>
-                </div>
+	</div>
 
     </main>
 
