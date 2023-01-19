@@ -1,5 +1,6 @@
 <?php
 require '../php/connect.php';
+
 if(!empty($_SESSION["Email"])){
     $Email = $_SESSION["Email"];
     $query = "SELECT * FROM users WHERE email = '{$Email}'";
@@ -9,6 +10,8 @@ if(!empty($_SESSION["Email"])){
 else{
   header("..//HTML/logIn.html");
 }
+
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
