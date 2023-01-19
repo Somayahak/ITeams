@@ -20,10 +20,10 @@ else{
 			$errors = "You must fill in the project name and description";
 		}else{
             $errors = "";
-            $uid=$row["userId"];
+            $projectUserId=$row["userId"];
             $projectName = $_POST['projectName'];
 			$prevProjectDescription = $_POST['prevProjectDescription'];
-			$sql = "INSERT INTO userPrevProjects (prevProjectId,prevProjectName,prevProjectDescription) VALUES ('$uid','$projectName','$prevProjectDescription')";
+			$sql = "INSERT INTO userPrevProjects (prevProjectId,prevProjectName,prevProjectDescription) VALUES ('$projectUserId','$projectName','$prevProjectDescription')";
 			mysqli_query($conn, $sql);
 			// header('location: ..//HTML/profile.php');
             
