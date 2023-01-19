@@ -176,7 +176,7 @@ else{
 			    <div>
 				    <?php
 				    $uu = mysqli_query($conn,"SELECT userId FROM users");
-				    echo mysqli_fetch_array($uu);
+				    echo mysqli_fetch_assoc($uu);
 				    echo'hi';
 				    
 				    ?>
