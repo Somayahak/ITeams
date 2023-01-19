@@ -181,7 +181,7 @@ else{
                 <?php include("..//HTML/prevProjects.php");?>
                         <?php 
                         // select all tasks if page is visited or refreshed
-                        $prvproject = mysqli_query($conn, "SELECT * FROM userPrevProjects");
+                        $prvproject = mysqli_query($conn, "SELECT * FROM userPrevProjects WHERE projectUserId='30'");
 
                     $i = 1; while ($row = mysqli_fetch_array($prvproject)) { ?>
 
