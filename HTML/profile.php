@@ -3,7 +3,6 @@ require '../php/connect.php';
 
 if(!empty($_SESSION["Email"])){
     $Email = $_SESSION["Email"];
-    $userId = $_SESSION["user_id"];
     $query = "SELECT * FROM users WHERE email = '{$Email}'";
     $result = mysqli_query($conn, $query);
     $row = mysqli_fetch_assoc($result); 
@@ -176,7 +175,8 @@ else{
                     <a href="..//HTML/myProjects.php" style="font-size: 13px; color:#703589; margin-left:35%;"> More</a>
 			    <div>
 				    <?php
-				    echo $userId;
+				    $uu = mysqli_query($conn,"SELECT userId FROM users")
+				    echo $uu;
 				    echo'hi';
 				    
 				    ?>
