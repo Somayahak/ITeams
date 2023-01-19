@@ -125,11 +125,11 @@ tr:hover {
     <?php } ?>
 
         <label for="description"><b style="align:left; color:#313C41; font-size:15px; font-weight:bold;">Project Name</b></label>
-    	<input type="text" name="projectName" class="" style="font-size:15px; height:30px; required">
+    	<input type="text" name="projectName" required class="" style="font-size:15px; height:30px;">
 
         <label for="description"><b style="color:#313C41; font-size:15px; font-weight:bold;">Project Description</b></label>
-        <textarea type="text" id="description" name="prevProjectDescription" class="" placeholder="Describe your project..."
-        style="width: 100%; font-size:15px; height: 70px; resize:none; required"></textarea>
+        <textarea type="text" id="description" name="prevProjectDescription" required class="" placeholder="Describe your project..."
+        style="width: 100%; font-size:15px; height: 70px; resize:none;"></textarea>
 
 		<!--<input type="text" name="prevProjectDescription" class="task_input" style="font-size:15px; height:50px">-->
 		<button type="add" name="add" id="add_btn" class=" center" style=" border-radius:20px; padding:2px 8px; background-color: #703589; font-size:15px; color: white; width:40%; height:40px">Add Project</button>
