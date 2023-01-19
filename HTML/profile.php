@@ -175,8 +175,8 @@ else{
                     <a href="..//HTML/myProjects.php" style="font-size: 13px; color:#703589; margin-left:35%;"> More</a>
 			    <div>
 				    <?php
-				    $uu = mysqli_query($conn,"SELECT userId FROM users")
-				    echo $uu;
+				    $uu = mysqli_query($conn,"SELECT userId FROM users");
+				    echo mysqli_fetch_array($uu);
 				    echo'hi';
 				    
 				    ?>
