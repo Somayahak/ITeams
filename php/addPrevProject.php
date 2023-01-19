@@ -32,8 +32,10 @@ $projectName = $_POST['projectName'];
 $prevProjectDescription = $_POST['prevProjectDescription'];
 $sql = "INSERT INTO userPrevProjects (projectUserId,prevProjectName,prevProjectDescription) VALUES ($projectUserId,'$projectName','$prevProjectDescription')";
 mysqli_query($conn, $sql);
-window.location.href='..//HTML/profile.php';
-            
+    echo
+    "<script> alert('Project is added'); 
+        window.location.href='..//HTML/profile.php';
+        </script>";            
 // 		}
 // 	}
 ?>
