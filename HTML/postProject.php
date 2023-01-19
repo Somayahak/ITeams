@@ -83,7 +83,7 @@ else{
                     <textarea id="freeform" name="description" rows="4" cols="50" style="background-color:#e0d9ef;border-radius: 5px;margin-bottom: 30px;height:400px; resize:none; padding:12px 20px;"></textarea>
                     <!-- Line in between  -->
                     <div class="horizontal_line" style="width: 700px;"></div>
-                    <label for="freeform" style="font-size: 17px; color:#703589;margin-bottom: 30px;"><b>Required Skills
+                    <label for="freeform" style="font-size: 17px; color:#703589;margin-top: 20px;"><b>Required Skills
                             in
                             Your Team Members</b></label>
 
