@@ -118,7 +118,7 @@ else{
                     $count = 0;
                     $skills = explode(",", $row["skills"]);
                     foreach ($skills as $skill){
-                        if($count == 6){
+                        if(fmod($count,6) == 0){
                             echo "<br> <br>";
                         }
                         $count = $count + 1;
