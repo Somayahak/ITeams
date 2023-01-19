@@ -13,13 +13,13 @@ else{
 
 $userId=$row["userId"];
 $prvproject = mysqli_query($conn, "SELECT * FROM userPrevProjects WHERE projectUserId='$userId'");
-if(!empty($row = mysqli_fetch_array($prvproject))){
-$projectUserId=$row["userId"];
-$projectName = $_POST['projectName'];
-$prevProjectDescription = $_POST['prevProjectDescription'];
-$sql = "INSERT INTO userPrevProjects (projectUserId,prevProjectName,prevProjectDescription) VALUES ($projectUserId,'$projectName','$prevProjectDescription')";
-mysqli_query($conn, $sql);
-}
+// if(!empty($row = mysqli_fetch_array($prvproject))){
+// $projectUserId=$row["userId"];
+// $projectName = $_POST['projectName'];
+// $prevProjectDescription = $_POST['prevProjectDescription'];
+// $sql = "INSERT INTO userPrevProjects (projectUserId,prevProjectName,prevProjectDescription) VALUES ($projectUserId,'$projectName','$prevProjectDescription')";
+// mysqli_query($conn, $sql);
+// }
 
 ?>
 <!DOCTYPE html>
