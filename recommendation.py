@@ -10,7 +10,7 @@ def recommend():
     destances = sorted(list(enumerate(similarity[index])), reverse=True, key=lambda x: x[1])
     recomended_movies_name =[]
     for i in destances[1:]:
-       recomended_movies_name.append(movies.iloc[i[0]].description)
+       recomended_movies_name.append(movies.iloc[i[0]].jobdescription)
     return recomended_movies_name
 
 app = Flask(__name__)
