@@ -40,5 +40,5 @@ def recommendation():
     else:
      return render_template("..//HTML/footer.html", movies_list=movies_list,MEHAF=MEHAF)
 
-if __name__ == '__main__':
-    app.run()
+#if __name__ == '__main__':
+#    app.run()
