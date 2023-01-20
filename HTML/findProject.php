@@ -59,16 +59,53 @@
                 </div>
             </form>
     </div>
+         {%if status == True%}
         <!-- Recommneded Projects -->
         <form action="..//HTML/.html">
-
+       <from action= "findProject.php" method="POST">
             <div class="containers" style="height:670px; margin-bottom:50px;  margin-top:50px">
                 <div class="card flex" style="height:730px; background-color: #fff;width: 800px; border-radius: 20px;">
                     <label for="freeform" style="font-size: 20px; color:#703589;"><b>Recommended Projects</b></label>
                     <div class="px-3 ex1" style="height: inherit; margin-top: 5px;">
                         <div class="flex-container-v" style="padding: 10px; background-color:#fff;">
-
+                            {% for j in movies_name %}
                             <div class="wrapper"
+                                style=" background:#EFF3F8;width:fit-content;height: fit-content;margin-bottom: 20px;">
+                                <div class="box header" style="text-align: left;"><a class="nav-link" href=""><b>Web
+                                            Application
+                                            That is Online Assignmnet Submission System</b></a></div>
+
+                                <div class="box sidebar" style="text-align: left;  color: #313C41;">
+
+                                    <span style="margin:5px; padding:4px 10px;">
+                                        <span
+                                            style="margin-left:5px; border-radius: 20px; padding:2px 8px; font-weight:normal; border: 1.5px solid #6CBBD2;">
+                                            C </span>
+                                        <span
+                                            style="margin-left:5px; border-radius: 20px; padding:2px 8px; font-weight:normal; border: 1.5px solid #6CBBD2;">
+                                            Python </span>
+                                        <span
+                                            style="margin-left:5px; border-radius: 20px; padding:2px 8px; font-weight:normal; border: 1.5px solid #6CBBD2;">
+                                            HTML </span>
+                                        <span
+                                            style="margin-left:5px; border-radius: 20px; padding:2px 8px; font-weight:normal; border: 1.5px solid #6CBBD2;">
+                                            CSS </span>
+                                    </span>
+
+                                </div>
+                                <div class="box content" style="text-align: left;  color: #313C41;padding-left: 10px;">
+                                    {{movies_name[j]}}
+                                </div>
+                                <div class="box footer" style="text-align: left;  color: #313C41;padding-left: 10px;">
+                                    <b>Budget 70.00
+                                        SAR -
+                                        570.00 SAR</b></div>
+
+                            </div>
+                            
+                            {% endfor %}
+                            
+                          <!--   <div class="wrapper"
                                 style=" background:#EFF3F8;width:fit-content;height: fit-content;margin-bottom: 20px;">
                                 <div class="box header" style="text-align: left;"><a class="nav-link" href=""><b>Web
                                             Application
@@ -143,52 +180,16 @@
                                         SAR -
                                         570.00 SAR</b></div>
 
-                            </div>
-                            <div class="wrapper"
-                                style=" background:#EFF3F8;width:fit-content;height: fit-content;margin-bottom: 20px;">
-                                <div class="box header" style="text-align: left;"><a class="nav-link" href=""><b>Web
-                                            Application
-                                            That is Online Assignmnet Submission System</b></a></div>
-
-                                <div class="box sidebar" style="text-align: left;  color: #313C41;">
-
-                                    <span style="margin:5px; padding:4px 10px;">
-                                        <span
-                                            style="margin-left:5px; border-radius: 20px; padding:2px 8px; font-weight:normal; border: 1.5px solid #6CBBD2;">
-                                            C </span>
-                                        <span
-                                            style="margin-left:5px; border-radius: 20px; padding:2px 8px; font-weight:normal; border: 1.5px solid #6CBBD2;">
-                                            Python </span>
-                                        <span
-                                            style="margin-left:5px; border-radius: 20px; padding:2px 8px; font-weight:normal; border: 1.5px solid #6CBBD2;">
-                                            HTML </span>
-                                        <span
-                                            style="margin-left:5px; border-radius: 20px; padding:2px 8px; font-weight:normal; border: 1.5px solid #6CBBD2;">
-                                            CSS </span>
-                                    </span>
-
-                                </div>
-                                <div class="box content" style="text-align: left;  color: #313C41;padding-left: 10px;">
-                                    In this
-                                    project
-                                    teachers will
-                                    assign assignment to students and students will upload the assignment online
-                                    with
-                                    the help of this web application
-                                </div>
-                                <div class="box footer" style="text-align: left;  color: #313C41;padding-left: 10px;">
-                                    <b>Budget 70.00
-                                        SAR -
-                                        570.00 SAR</b></div>
-
-                            </div>
+                            </div> -->
 
                         </div>
                     </div>
                 </div>
             </div>
             </div>
+            {% endif %}
         </form>
+       </form>   
         <!-- </div> -->
     </main>
 
