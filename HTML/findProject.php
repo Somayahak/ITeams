@@ -62,7 +62,7 @@
          
         <!-- Recommneded Projects -->
         <form action="..//HTML/.html">
-       <from action= "findProject.php" method="POST">
+       <from action= "..//HTML/findProject.php" method="POST">
             <div class="containers" style="height:670px; margin-bottom:50px;  margin-top:50px">
                 <div class="card flex" style="height:730px; background-color: #fff;width: 800px; border-radius: 20px;">
                     <label for="freeform" style="font-size: 20px; color:#703589;"><b>Recommended Projects</b></label>
