@@ -20,7 +20,7 @@ else{
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 	<meta name="description" content="" />
 	<meta name="author" content="" />
-	<title>ITeams Post Project</title>
+	<title>ITeams Edit Profile</title>
 	<!--person icon-->
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
 	<!-- Favicon-->
@@ -79,9 +79,7 @@ else{
                 	<label for="freeform" style="font-size: 14px; color:#703589;"><b>First Name</b></label>
 			<label for="freeform" style="font-size: 14px; color:#703589;"><b>Last Name</b></label>
                     
-			<textarea id="freeform" name="title" rows="4" cols="50" style="background-color:#e0d9ef;border-radius: 5px; margin-bottom: 30px;height:100px; width:40%; resize:none; padding:12px 20px;">
-                        <?php echo $row['firstName']; ?> 
-                   	</textarea>
+			<input id="freeform" name="title" value="<?php echo $row['firstName']; ?>" style="background-color:#e0d9ef;border-radius: 5px; margin-bottom: 30px;height:100px; width:40%; resize:none; padding:12px 20px;">
 			
 			<textarea id="freeform" name="title" rows="4" cols="50" style="background-color:#e0d9ef;border-radius: 5px; margin-bottom: 30px;height:100px; width:40%; resize:none; padding:12px 20px;">
                         <?php echo $row['lastName']; ?> 
