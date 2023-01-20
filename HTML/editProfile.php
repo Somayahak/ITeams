@@ -48,11 +48,10 @@
             <div class="containers" style="height:670px; margin-bottom:50px;  margin-top:50px">
                 <div class="card flex" style="height:730px; background-color: #fff;width: 800px; border-radius: 20px;">
                     <label for="freeform" style="font-size: 20px; color:#703589;"><b>Edit Profile</b></label>
-                    <div class="px-3" style="height: inherit; margin-top: 5px;">
+<!--                     <div class="px-3" style="height: inherit; margin-top: 5px;">
                         <div class="flex-container-v" style="padding: 10px; background-color:#fff;">
                            <!-- {% for j in movies_name %}-->
-                            <div style=" background:#EFF3F8;width:200px;height:800px;margin-bottom: 20px;">
-                                
+<!--                             <div style=" background:#EFF3F8; width:200px;height:800px;margin-bottom: 20px;"> -->
                                    fname: <input type="text" name="fname"><br>
  
                                    lname: <input type="text" name="lname"><br>
@@ -83,9 +82,9 @@
 
                                 </div>
                             </div> -->
-                        </div>
+<!--                         </div>
                     </div>
-                </div>
+                </div> -->
             </div>
             </div>
         </form>
