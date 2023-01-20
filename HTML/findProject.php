@@ -51,7 +51,7 @@
                     <label for="search"><b style="color:#703589;">Browse</b>
                         <br>
                         <input type="text" id="search" name="search"
-                            style="width:600px;border: 1.5px solid #313C41; color: black;background-color: #EFF3F8;border-radius: 10px; margin-right: 10px; height: 30px;font-size: 12px;" placeholder="Search For Projects"
+                            style="width:600px;border: 1px solid none; color: black;background-color: #EFF3F8;border-radius: 10px; margin-right: 10px; height: 30px;font-size: 12px;" placeholder="Search For Projects"
                             required="required">
                         <button
                             style="width:80px; border-radius: 20px; height:30px;background-color: #6CBBD2;font-size:12px;text-align:justify;">Search</button>
