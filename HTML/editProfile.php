@@ -51,7 +51,7 @@
                     <div class="px-3" style="height: inherit; margin-top: 5px;">
                         <div class="flex-container-v" style="padding: 10px; background-color:#fff;">
                            <!-- {% for j in movies_name %}-->
-                            <div style=" background:#EFF3F8;width:fit-content;height: fit-content;margin-bottom: 20px;">
+                            <div style=" background:#EFF3F8;width:200px;height:800px;margin-bottom: 20px;">
                                 
                                    fname: <input type="text" name="fname"><br>
  
