@@ -79,9 +79,9 @@ else{
                 	<span> <label for="freeform" style="font-size: 17px; color:#703589;"><b>First Name</b></label>
 			<label for="freeform" style="font-size: 17px; color:#703589; margin-left:200px"><b>Last Name</b></label> </span>
                     
-			<span> <input id="freeform" name="title" value="<?php echo $row['firstName']; ?>" style="background-color:#e0d9ef;border-radius: 5px; margin-bottom: 30px;height:20px; width:40%; resize:none; padding:12px 20px;">
+			<span> <input id="freeform" name="title" value="<?php echo $row['firstName']; ?>" style="background-color:#e0d9ef;border-radius: 5px; margin-bottom: 30px;height:50px; width:40%; resize:none; padding:12px 20px;">
 			
-			<input id="freeform" name="title" value="<?php echo $row['lastName']; ?>" style="margin-left:8px; background-color:#e0d9ef;border-radius: 5px; margin-bottom: 30px;height:20px; width:40%; resize:none; padding:12px 20px;">
+			<input id="freeform" name="title" value="<?php echo $row['lastName']; ?>" style="margin-left:10px; background-color:#e0d9ef;border-radius: 5px; margin-bottom: 30px;height:50px; width:40%; resize:none; padding:12px 20px;">
 			</span>
 
                     <label for="freeform" style="font-size: 17px; color:#703589;"><b>Project Description</b></label>
