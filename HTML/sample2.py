@@ -8,7 +8,7 @@ app = Flask(__name__)
 MEHAF= 'MEHAFMEHAFMEHAFMEHAFMEHAFMEHAF'
 
 # defining home page
-@app.route('/footer.html')
+@app.route('/footer')
 def homepage():
   
 # returning index.html and list
