@@ -25,20 +25,12 @@ def recommendation():
     #
     MEHAF= 'MEHAFMEHAFMEHAFMEHAFMEHAFMEHAF'
    # if request.method == "GET":
-        try:
             #if request.form:
                 #movies_name = request.form['movies']
                 recomended_movies_name = recommend()
                 #status=True
 
                 return render_template("..//HTML/footer.html", movies_name = recomended_movies_name, movies_list= movies_list,MEHAF=MEHAF)
-
-        except Exception as e:
-            error={'error', e}
-            return render_template("..//HTML/footer.html", error = error,movies_list=movies_list,MEHAF=MEHAF)
-
-    else:
-     return render_template("..//HTML/footer.html", movies_list=movies_list,MEHAF=MEHAF)
 
 #if __name__ == '__main__':
 #    app.run()
