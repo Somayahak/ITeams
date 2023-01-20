@@ -54,7 +54,7 @@
                             style="width:600px;border: 1px solid none; color: black;background-color: #EFF3F8;border-radius: 10px; margin-right: 10px; height: 30px;font-size: 12px;" placeholder="Search For Projects"
                             required="required">
                         <button
-                            style="width:80px; border-radius: 20px; height:30px;background-color: #6CBBD2;font-size:12px;text-align:justify;">Search</button>
+                            style="width:80px; border-radius: 20px; height:30px;background-color: #6CBBD2;font-size:12px;text-align:justify; padding:2px 20px;">Search</button>
                         </div>              
                 </div>
             </form>
