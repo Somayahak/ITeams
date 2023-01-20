@@ -1,4 +1,4 @@
-from flask import Flask, request, render_template,request
+from flask import Flask,render_template
 import pickle
 
 movies = pickle.load(open('Model/description25_df','rb'))
