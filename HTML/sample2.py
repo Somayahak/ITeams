@@ -1,14 +1,19 @@
-# importing modules
-from flask import Flask, render_template
-  
-# declaring app name
-app = Flask(__name__)
+# main.py
+
+from fastapi import FastAPI
+
+app = FastAPI()
+
+@app.get("/")
+async def root():
+    return {"message": "Hello World"}
+
   
 # making list of pokemons
 AMAL= 'AmalllAmalll'
 
 # defining home page
-@app.route('/footer')
+@app.get("/footer")
 def homepage():
   
 # returning index.html and list
