@@ -76,8 +76,8 @@ else{
 
 
 		
-            <div class="containers" style="height:700px; margin-bottom:50px;  margin-top:50px">
-                <div class="card flex" style="height:760px; background-color: #fff;width: 800px; border-radius: 20px;">
+            <div class="containers" style="height:720px; margin-bottom:50px;  margin-top:50px">
+                <div class="card flex" style="height:780px; background-color: #fff;width: 800px; border-radius: 20px;">
 			<b style="font-size: 25px; color:#703589;">Edit Profile</b>
 			</br>
 			<b style=color:#313C41>Account Information:</b>
@@ -113,7 +113,7 @@ else{
 			<div class="dropdown-divider"></div>
 		    
 			<label for="description" style="font-size: 15px; color:#703589;"><b>User Description</b></label>
-		        <textarea id="freeform" name="description" style="background-color:#e0d9ef;border-radius: 5px;margin-bottom: 30px;height:400px; padding:12px 20px;"><?php echo $row['userDescription'];?></textarea>
+		        <textarea id="freeform" name="description" style="background-color:#e0d9ef;border-radius: 5px; resize:none; margin-bottom: 30px;height:400px; padding:12px 20px;"><?php echo $row['userDescription'];?></textarea>
 
 		    
                     <center>
