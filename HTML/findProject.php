@@ -43,7 +43,7 @@
         </header>
 
         <!-- Search -->
-        <div class="containers" style="height:150px; margin-bottom:50px;  margin-top:30px">
+        <div class="containers" style="height:120px; margin-bottom:50px;  margin-top:30px">
         <div class="containers" style="border-radius: 10px;height:100px; background-color: #fff;width:800px;">
             <form action="..//HTML/.html">
                 <div class="container">
@@ -63,7 +63,7 @@
         <form action="..//HTML/.html">
 
             <div class="containers" style="height:670px; margin-bottom:50px;  margin-top:50px">
-                <div class="card flex" style="height:730px; background-color: #fff;width: 800px;">
+                <div class="card flex" style="height:730px; background-color: #fff;width: 800px; border-radius: 10px;">
                     <label for="freeform" style="font-size: 20px; color:#703589;"><b>Recommended Projects</b></label>
                     <div class="px-3 ex1" style="height: inherit; margin-top: 5px;">
                         <div class="flex-container-v" style="padding: 10px; background-color:#fff;">
