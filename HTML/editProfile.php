@@ -100,8 +100,8 @@ else{
                 	<span> <label for="fname" style="font-size: 15px; color:#703589;"><b>First Name</b></label>
 			<label for="lname" style="font-size: 15px; color:#703589; margin-left:300px"><b>Last Name</b></label> </span>
 		    
-			<span> <input id="freeform" name="fname" value="<?php echo $row['firstName']; ?>" style="background-color:#e0d9ef;border-radius: 5px; margin-bottom: 30px;height:50px; width:50%; resize:none; padding:12px 20px;">
-			<input id="freeform" name="lname" value="<?php echo $row['lastName']; ?>" style=" background-color:#e0d9ef;border-radius: 5px; margin-bottom: 30px;height:50px; width:50%; resize:none; padding:12px 20px;">
+			<span> <input id="freeform" name="fname" value="<?php echo $row['firstName']; ?>" style="background-color:#e0d9ef;border-radius: 5px; margin-bottom: 30px;height:50px; width:50%; resize:none; padding-bottom:12px;">
+			<input id="freeform" name="lname" value="<?php echo $row['lastName']; ?>" style=" background-color:#e0d9ef;border-radius: 5px; margin-bottom: 30px;height:50px; width:50%; resize:none; padding-bottom:12px;">
 			</span>
 		    
 			<label for="phone" style="font-size: 15px; color:#703589;"><b>Phone Number</b></label>
