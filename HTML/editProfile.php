@@ -78,19 +78,31 @@ else{
 		
             <div class="containers" style="height:670px; margin-bottom:50px;  margin-top:50px">
                 <div class="card flex" style="height:730px; background-color: #fff;width: 800px; border-radius: 20px;">
-			<b style="font-size: 17px; color:#703589;">Edit Profile</b>
-
+			<b style="font-size: 25px; color:#703589;">Edit Profile</b>
+			</br>
 			<b style=color:#313C41>Account Information:</b>
 			<div class="dropdown-divider"></div>
-			
-                	<span> <label for="freeform" style="font-size: 17px; color:#703589;"><b>First Name</b></label>
-			<label for="freeform" style="font-size: 17px; color:#703589; margin-left:200px"><b>Last Name</b></label> </span>
-                    
-			<span> <input id="freeform" name="title" value="<?php echo $row['firstName']; ?>" style="background-color:#e0d9ef;border-radius: 5px; margin-bottom: 30px;height:50px; width:40%; resize:none; padding:12px 20px;">
-			
-			<input id="freeform" name="title" value="<?php echo $row['lastName']; ?>" style="margin-left:10px; background-color:#e0d9ef;border-radius: 5px; margin-bottom: 30px;height:50px; width:40%; resize:none; padding:12px 20px;">
+
+			<label for="email" style="font-size: 15px; color:#703589;"><b>Email</b></label>
+			<input id="email" required name="email" value="<?php echo $row['email']; ?>" style="background-color:#e0d9ef;border-radius: 5px; margin-bottom: 30px;height:50px; width:40%; resize:none; padding:12px 20px;">
+
+<!-- 			<label for="oldPassword" style="font-size: 15px; color:#703589;"><b>Email</b></label>
+			<input id="oldPassword" required name="oldPassword" value="<?php echo $row['email']; ?>" style="background-color:#e0d9ef;border-radius: 5px; margin-bottom: 30px;height:50px; width:40%; resize:none; padding:12px 20px;">
+		    
+ -->
+			    <input value="Change Password" name="changePass" 
+                            class="btn-btn-info">
+		    
+		    
+                	<span> <label for="fname" style="font-size: 15px; color:#703589;"><b>First Name</b></label>
+			<label for="lname" style="font-size: 15px; color:#703589; margin-left:200px"><b>Last Name</b></label> </span>
+		    
+			<span> <input id="freeform" name="fname" value="<?php echo $row['firstName']; ?>" style="background-color:#e0d9ef;border-radius: 5px; margin-bottom: 30px;height:50px; width:40%; resize:none; padding:12px 20px;">
+			<input id="freeform" name="lname" value="<?php echo $row['lastName']; ?>" style="margin-left:10px; background-color:#e0d9ef;border-radius: 5px; margin-bottom: 30px;height:50px; width:40%; resize:none; padding:12px 20px;">
 			</span>
 
+		    
+		    
                     <label for="freeform" style="font-size: 17px; color:#703589;"><b>Project Description</b></label>
                     <textarea id="freeform" name="description" rows="4" cols="50" style="background-color:#e0d9ef;border-radius: 5px;margin-bottom: 30px;height:400px; resize:none; padding:12px 20px;"></textarea>
                     <!-- Line in between  -->
