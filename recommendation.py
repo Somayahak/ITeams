@@ -1,4 +1,4 @@
-"""" from flask import Flask,render_template
+from flask import Flask,render_template
 import pickle
 
 movies = pickle.load(open('Model/description25_df','rb'))
@@ -32,6 +32,5 @@ def recommendation():
 
                 return render_template("..//HTML/footer.html", movies_name = recomended_movies_name, movies_list= movies_list,MEHAF=MEHAF)
 
-#if __name__ == '__main__':
-#    app.run()
-""""
+if __name__ == '__main__':
+   app.run()
