@@ -15,5 +15,5 @@ def homepage():
 # and length of list to html page
     return render_template("/footer.html", AMAL=AMAL)
   
-if __name__ == '__main__':
-    app.run()
+    if __name__ == '__main__':
+      app.run()
