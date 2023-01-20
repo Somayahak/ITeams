@@ -22,7 +22,8 @@ def home():
 @app.route('../HTML/findProject.php')
 def recommendation():
     movies_list = movies["jobdescription"].values
-    #status= False
+    #
+    MEHAF= 'MEHAFMEHAFMEHAFMEHAFMEHAFMEHAF'
    # if request.method == "GET":
         try:
             #if request.form:
@@ -30,14 +31,14 @@ def recommendation():
                 recomended_movies_name = recommend()
                 #status=True
 
-                return render_template("../HTML/findProject.php", movies_name = recomended_movies_name, movies_list= movies_list)
+                return render_template("../HTML/findProject.php", movies_name = recomended_movies_name, movies_list= movies_list,MEHAF=MEHAF)
 
         except Exception as e:
             error={'error', e}
-            return render_template("../HTML/findProject.php", error = error,movies_list=movies_list)
+            return render_template("../HTML/findProject.php", error = error,movies_list=movies_list,MEHAF=MEHAF)
 
     else:
-     return render_template("../HTML/findProject.php", movies_list=movies_list)
+     return render_template("../HTML/findProject.php", movies_list=movies_list,MEHAF=MEHAF)
 
 if __name__ == '__main__':
     app.run()
