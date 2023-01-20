@@ -21,17 +21,19 @@ def home():
 @app.route('../HTML/findProject.php', methods =['GET','POST'])
 def recommendation():
     movies_list = movies["description"].values
+    status= False
     if request.method == "POST":
         try:
             if request.form:
                 movies_name = request.form['movies']
                 recomended_movies_name = recommend()
+                status=True
 
-                return render_template("../HTML/findProject.php", movies_name = recomended_movies_name)
+                return render_template("../HTML/findProject.php", movies_name = recomended_movies_name, movies_list= movies_list, status= status)
 
         except Exception as e:
             error={'error', e}
-            return render_template("../HTML/findProject.php", movies_list=movies_list)
+            return render_template("../HTML/findProject.php", error = error,movies_list=movies_list)
 
     else:
      return render_template("../HTML/findProject.php", movies_list=movies_list)
