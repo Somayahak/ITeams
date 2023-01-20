@@ -90,8 +90,8 @@ else{
 			<input id="oldPassword" required name="oldPassword" value="<?php echo $row['email']; ?>" style="background-color:#e0d9ef;border-radius: 5px; margin-bottom: 30px;height:50px; width:40%; resize:none; padding:12px 20px;">
 		    
  -->
-			    <input value="Change Password" name="changePass" 
-                            class="btn-btn-info">
+			<button type="button" id="changePass" onclick="..//HTML/profile.php">Change Password</button>
+
 		    
 		    
                 	<span> <label for="fname" style="font-size: 15px; color:#703589;"><b>First Name</b></label>
