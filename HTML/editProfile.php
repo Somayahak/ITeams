@@ -86,13 +86,16 @@ else{
 			<label for="email" style="font-size: 15px; color:#703589;"><b>Email</b></label>
 			<input id="email" required name="email" value="<?php echo $row['email']; ?>" style="background-color:#e0d9ef;border-radius: 5px; margin-bottom: 30px;height:50px; width:40%; resize:none; padding:12px 20px;">
 
-<!-- 			<label for="oldPassword" style="font-size: 15px; color:#703589;"><b>Email</b></label>
-			<input id="oldPassword" required name="oldPassword" value="<?php echo $row['email']; ?>" style="background-color:#e0d9ef;border-radius: 5px; margin-bottom: 30px;height:50px; width:40%; resize:none; padding:12px 20px;">
+<!-- 			<label for="oldPassword" style="font-size: 15px; color:#703589;"><b>Password</b></label>
+			<input id="oldPassword" required name="oldPassword" value="" style="background-color:#e0d9ef;border-radius: 5px; margin-bottom: 30px;height:50px; width:40%; resize:none; padding:12px 20px;">
 		    
  -->
-			<button type="button" id="changePass" onclick="..//HTML/profile.php">Change Password</button>
+<!-- 			<button type="button" id="changePass" onclick="..//HTML/profile.php">Change Password</button>
+ -->
+<!--///////////////////////////////////////////////////////////////////////////////////////////////-->
 
-		    
+		    <b style=color:#313C41>Personal Information:</b>
+			<div class="dropdown-divider"></div>
 		    
                 	<span> <label for="fname" style="font-size: 15px; color:#703589;"><b>First Name</b></label>
 			<label for="lname" style="font-size: 15px; color:#703589; margin-left:200px"><b>Last Name</b></label> </span>
@@ -100,53 +103,25 @@ else{
 			<span> <input id="freeform" name="fname" value="<?php echo $row['firstName']; ?>" style="background-color:#e0d9ef;border-radius: 5px; margin-bottom: 30px;height:50px; width:40%; resize:none; padding:12px 20px;">
 			<input id="freeform" name="lname" value="<?php echo $row['lastName']; ?>" style="margin-left:10px; background-color:#e0d9ef;border-radius: 5px; margin-bottom: 30px;height:50px; width:40%; resize:none; padding:12px 20px;">
 			</span>
-
 		    
-		    
-                    <label for="freeform" style="font-size: 17px; color:#703589;"><b>Project Description</b></label>
-                    <textarea id="freeform" name="description" rows="4" cols="50" style="background-color:#e0d9ef;border-radius: 5px;margin-bottom: 30px;height:400px; resize:none; padding:12px 20px;"></textarea>
-                    <!-- Line in between  -->
-                    <div class="horizontal_line" style="width: 700px; margin-bottom: 30px;"></div>
-                    <label for="freeform" style="font-size: 17px; color:#703589;"><b>Required Skills
-                            in
-                            Your Team Members</b></label>
+			<label for="phone" style="font-size: 15px; color:#703589;"><b>Phone Number</b></label>
+		    	<input id="phone" required name="phone" value="<?php echo $row['phone']; ?>" style="background-color:#e0d9ef;border-radius: 5px; margin-bottom: 30px;height:50px; width:40%; resize:none; padding:12px 20px;">
 
-                    <!--Search for skills-->
-                     <body class="dx-viewport ">
-                        <div class="demo-container">
-                            <div id="tagBox" style="background-color: #e0d9ef; border-color: purple;"></div>
+<!--///////////////////////////////////////////////////////////////////////////////////////////////-->
+		    
+		    	<b style=color:#313C41>Profile Information:</b>
+			<div class="dropdown-divider"></div>
+		    
+			<label for="description" style="font-size: 15px; color:#703589;"><b>User Description</b></label>
+		    	<input id="description" required name="description" value="<?php echo $row['description']; ?>" style="background-color:#e0d9ef;border-radius: 5px; margin-bottom: 30px;height:50px; width:40%; resize:none; padding:12px 20px;">
+
+
+
+		  
+
                         </div>
                     </body>
-                    
-                              
-                    <div >
-                        <div class="horizontal_line" style="width: 700px; margin-top: 30px;"></div>
-                        <!--THE POST PROJECT FOTTER-->
-                        <div class="wrapper3" style="grid-gap:290px;margin-top:0.5px;border-radius: 5px;">
-                            <!--Budget selector-->
-                            <div class="box2 a" style="width: 195px;font-size: 17px;"><b>Budget</b>
-                                <div class="select-dropdown">
-                                    <select id="budget" name="budget">
-                                        <option value="Option 1">First Option</option>
-                                        <option value="Option 2">2nd Option</option>
-                                        <option value="Option 3">Option Number 3</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <!--Members No-->
-                            <div class="box2 b" style="width: 350px;font-size: 17px; margin-right: 25px;"><b>Number of
-                                    Members in Your Team
-                                </b>
-                                <div class="wrapperInc">
-                                    <span class="minus">-</span>
-                                    <span class="num" name="membersNo">01</span>
-                                    <span class="plus">+</span>
-                                </div>
-                            </div>
 
-                        </div>
-
-                    </div>
                     <center>
                         <input type="submit" value="Post Project" name="post_project" 
                             class="btn-btn-info">
