@@ -33,7 +33,7 @@ def recommendation():
 
         except Exception as e:
             error={'error', e}
-            return render_template("../HTML/findProject.php", error = error,movies_list=movies_list)
+            return render_template("../HTML/findProject.php", error = error,movies_list=movies_list, status= status)
 
     else:
-     return render_template("../HTML/findProject.php", movies_list=movies_list)
+     return render_template("../HTML/findProject.php", movies_list=movies_list, status= status)
