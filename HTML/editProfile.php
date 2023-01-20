@@ -100,8 +100,8 @@ else{
                 	<span> <label for="fname" style="font-size: 15px; color:#703589;"><b>First Name</b></label>
 			<label for="lname" style="font-size: 15px; color:#703589; margin-left:300px"><b>Last Name</b></label> </span>
 		    
-			<span> <input id="freeform" name="fname" value="<?php echo $row['firstName']; ?>" style="background-color:#e0d9ef;border-radius: 5px; margin-bottom: 30px;height:50px; width:45%; resize:none; padding:12px 20px;">
-			<input id="freeform" name="lname" value="<?php echo $row['lastName']; ?>" style="margin-left:10px; background-color:#e0d9ef;border-radius: 5px; margin-bottom: 30px;height:50px; width:45%; resize:none; padding:12px 20px;">
+			<span> <input id="freeform" name="fname" value="<?php echo $row['firstName']; ?>" style="background-color:#e0d9ef;border-radius: 5px; margin-bottom: 30px;height:50px; width:50%; resize:none; padding:12px 20px;">
+			<input id="freeform" name="lname" value="<?php echo $row['lastName']; ?>" style=" background-color:#e0d9ef;border-radius: 5px; margin-bottom: 30px;height:50px; width:50%; resize:none; padding:12px 20px;">
 			</span>
 		    
 			<label for="phone" style="font-size: 15px; color:#703589;"><b>Phone Number</b></label>
@@ -113,7 +113,7 @@ else{
 			<div class="dropdown-divider"></div>
 		    
 			<label for="description" style="font-size: 15px; color:#703589;"><b>User Description</b></label>
-		                        <textarea id="freeform" name="description" rows="4" cols="50" style="background-color:#e0d9ef;border-radius: 5px;margin-bottom: 30px;height:400px; resize:none; padding:12px 20px;">
+		                        <textarea id="freeform" name="description" style="background-color:#e0d9ef;border-radius: 5px;margin-bottom: 30px;height:400px; resize:none; padding:12px 20px;">
 		    		    <?php echo $row['userDescription']; ?>
 					</textarea>
 
