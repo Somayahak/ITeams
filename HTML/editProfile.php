@@ -113,10 +113,9 @@ else{
 			<div class="dropdown-divider"></div>
 		    
 			<label for="description" style="font-size: 15px; color:#703589;"><b>User Description</b></label>
-		        <textarea id="freeform" name="description" style="background-color:#e0d9ef;border-radius: 5px;margin-bottom: 30px;height:200%; resize:none; padding:12px 20px;"><?php echo $row['userDescription'];?></textarea>
+		        <textarea id="freeform" name="description" style="background-color:#e0d9ef;border-radius: 5px;margin-bottom: 30px;height:200%; padding:12px 20px;"><?php echo $row['userDescription'];?></textarea>
 
-
-		  
+		    
                     <center>
                         <input type="submit" value="Save" name="post_project" 
                             class="btn-btn-info">
