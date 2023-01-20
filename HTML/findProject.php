@@ -94,7 +94,7 @@
 
                                 </div>
                                 <div class="box content" style="text-align: left;  color: #313C41;padding-left: 10px;">
-                                    {{j[0]}}
+                                    {{movies_name[0]}}
                                 </div>
                                 <div class="box footer" style="text-align: left;  color: #313C41;padding-left: 10px;">
                                     <b>Budget 70.00
