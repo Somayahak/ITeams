@@ -118,10 +118,6 @@ else{
 
 
 		  
-
-                        </div>
-                    </body>
-
                     <center>
                         <input type="submit" value="Post Project" name="post_project" 
                             class="btn-btn-info">
