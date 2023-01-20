@@ -104,7 +104,7 @@ else{
                             </span></i>
                 </div>
                 <a class="btn btn-primary btn-lg px-4 me-sm-3" style="border-radius: 20px; font-size: 15px; margin-bottom: 80px;"
-                href="">Edit Profile</a>
+                href="..//HTML/editProfile.php">Edit Profile</a>
                 </div>
     
                 <div style="grid-row: 1 / 5; margin-left: 10px;  margin-top: 10px;  margin-bottom: 40px;">
