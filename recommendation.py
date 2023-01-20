@@ -18,7 +18,7 @@ app = Flask(__name__)
 def home():
     return render_template('index.php')
 
-@app.route('/recommendation', methods =['GET','POST'])
+@app.route('../HTML/findProject.php', methods =['GET','POST'])
 def recommendation():
     movies_list = movies["description"].values
     if request.method == "POST":
@@ -27,11 +27,11 @@ def recommendation():
                 movies_name = request.form['movies']
                 recomended_movies_name = recommend()
 
-                return render_template("HTML/findProject.php", movies_name = recomended_movies_name)
+                return render_template("../HTML/findProject.php", movies_name = recomended_movies_name)
 
         except Exception as e:
             error={'error', e}
-            return render_template("HTML/findProject.php", movies_list=movies_list)
+            return render_template("../HTML/findProject.php", movies_list=movies_list)
 
     else:
-     return render_template("HTML/findProject.php", movies_list=movies_list)
+     return render_template("../HTML/findProject.php", movies_list=movies_list)
