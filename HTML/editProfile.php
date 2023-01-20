@@ -84,7 +84,7 @@ else{
 			<div class="dropdown-divider"></div>
 
 			<label for="email" style="font-size: 15px; color:#703589;"><b>Email</b></label>
-			<input id="email" required name="email" value="<?php echo $row['email']; ?>" style="background-color:#e0d9ef;border-radius: 5px; margin-bottom: 30px;height:50px; width:40%; resize:none; padding:12px 20px;">
+			<input id="email" required name="email" value="<?php echo $row['email']; ?>" style="background-color:#e0d9ef;border-radius: 5px; margin-bottom: 30px;height:50px; width:50%; resize:none; padding:12px 20px;">
 
 <!-- 			<label for="oldPassword" style="font-size: 15px; color:#703589;"><b>Password</b></label>
 			<input id="oldPassword" required name="oldPassword" value="" style="background-color:#e0d9ef;border-radius: 5px; margin-bottom: 30px;height:50px; width:40%; resize:none; padding:12px 20px;">
@@ -98,10 +98,10 @@ else{
 			<div class="dropdown-divider"></div>
 		    
                 	<span> <label for="fname" style="font-size: 15px; color:#703589;"><b>First Name</b></label>
-			<label for="lname" style="font-size: 15px; color:#703589; margin-left:200px"><b>Last Name</b></label> </span>
+			<label for="lname" style="font-size: 15px; color:#703589; margin-left:300px"><b>Last Name</b></label> </span>
 		    
-			<span> <input id="freeform" name="fname" value="<?php echo $row['firstName']; ?>" style="background-color:#e0d9ef;border-radius: 5px; margin-bottom: 30px;height:50px; width:40%; resize:none; padding:12px 20px;">
-			<input id="freeform" name="lname" value="<?php echo $row['lastName']; ?>" style="margin-left:10px; background-color:#e0d9ef;border-radius: 5px; margin-bottom: 30px;height:50px; width:40%; resize:none; padding:12px 20px;">
+			<span> <input id="freeform" name="fname" value="<?php echo $row['firstName']; ?>" style="background-color:#e0d9ef;border-radius: 5px; margin-bottom: 30px;height:50px; width:50%; resize:none; padding:12px 20px;">
+			<input id="freeform" name="lname" value="<?php echo $row['lastName']; ?>" style="margin-left:10px; background-color:#e0d9ef;border-radius: 5px; margin-bottom: 30px;height:50px; width:50%; resize:none; padding:12px 20px;">
 			</span>
 		    
 			<label for="phone" style="font-size: 15px; color:#703589;"><b>Phone Number</b></label>
@@ -113,8 +113,11 @@ else{
 			<div class="dropdown-divider"></div>
 		    
 			<label for="description" style="font-size: 15px; color:#703589;"><b>User Description</b></label>
-		    	<input id="description" required name="description" value="<?php echo $row['description']; ?>" style="background-color:#e0d9ef;border-radius: 5px; margin-bottom: 30px;height:50px; width:40%; resize:none; padding:12px 20px;">
-
+		    
+			<textarea type="text" id="description" name="description"
+			style="width: 100%; height: 150px; resize:none; padding:12px 20px; border-radius: 10px;margin: 8px 0;display: inline-block;border: 1px solid #ccc; box-sizing: border-box;">
+		    <?php echo $row['description']; ?>
+		    </textarea>
 
 
 		  
