@@ -76,8 +76,8 @@ else{
 
             <div class="containers" style="height:670px; margin-bottom:50px;  margin-top:50px">
                 <div class="card flex" style="height:730px; background-color: #fff;width: 800px; border-radius: 20px;">
-                	<label for="freeform" style="font-size: 14px; color:#703589;"><b>First Name</b></label>
-			<label for="freeform" style="font-size: 14px; color:#703589;"><b>Last Name</b></label>
+                	<label for="freeform" style="font-size: 14px; color:#703589; width:40%;"><b>First Name</b></label>
+			<label for="freeform" style="font-size: 14px; color:#703589; width:40%;"><b>Last Name</b></label>
                     
 			<input id="freeform" name="title" value="<?php echo $row['firstName']; ?>" style="background-color:#e0d9ef;border-radius: 5px; margin-bottom: 30px;height:100px; width:40%; resize:none; padding:12px 20px;">
 			
