@@ -61,7 +61,7 @@
     </div>
          
         <!-- Recommneded Projects -->
-        <!-- <form action="..//HTML/.html"> -->
+        <form action="..//HTML/.html"> 
        <from action= "..//HTML/findProject.php" method="POST">
             <div class="containers" style="height:670px; margin-bottom:50px;  margin-top:50px">
                 <div class="card flex" style="height:730px; background-color: #fff;width: 800px; border-radius: 20px;">
@@ -189,7 +189,7 @@
             </div>
             </div>
         </form>
-     <!--  </form> -->  
+     </form>
         <!-- </div> -->
     </main>
 
@@ -214,6 +214,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Core theme JS-->
     <script src="js/scripts.js"></script>
+    <script src="/recommendation.py"></script>
 </body>
 
 </html>
