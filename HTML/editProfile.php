@@ -43,15 +43,23 @@
         </header>
          
         <!-- Recommneded Projects -->
-        <form action="..//HTML/.html"> 
+       <form action="..//php//submitEditProfile.php" method="post">
        <!--  <from action= "..//HTML/findProject.php" method="GET"> -->
             <div class="containers" style="height:670px; margin-bottom:50px;  margin-top:50px">
                 <div class="card flex" style="height:730px; background-color: #fff;width: 800px; border-radius: 20px;">
                     <label for="freeform" style="font-size: 20px; color:#703589;"><b>Edit Profile</b></label>
-                    <div class="px-3 ex1" style="height: inherit; margin-top: 5px;">
+                    <div class="px-3" style="height: inherit; margin-top: 5px;">
                         <div class="flex-container-v" style="padding: 10px; background-color:#fff;">
                            <!-- {% for j in movies_name %}-->
                             <div class="wrapper" style=" background:#EFF3F8;width:fit-content;height: fit-content;margin-bottom: 20px;">
+                                
+                                   fname: <input type="text" name="fname"><br>
+ 
+                                   lname: <input type="text" name="lname"><br>
+
+                                   email: <input type="email" name="email"><br>
+
+                                   <input type="submit" name="edit">
 <!--                                 <div class="box header" style="text-align: left;"><a class="nav-link" href=""><b>Web
                                             Application
                                             That is Online Assignmnet Submission System</b></a></div>
