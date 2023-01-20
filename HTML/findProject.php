@@ -68,7 +68,7 @@
                     <label for="freeform" style="font-size: 20px; color:#703589;"><b>Recommended Projects</b></label>
                     <div class="px-3 ex1" style="height: inherit; margin-top: 5px;">
                         <div class="flex-container-v" style="padding: 10px; background-color:#fff;">
-                            {% for j in movies_name %}
+                           <!-- {% for j in movies_name %}-->
                             <div class="wrapper"
                                 style=" background:#EFF3F8;width:fit-content;height: fit-content;margin-bottom: 20px;">
                                 <div class="box header" style="text-align: left;"><a class="nav-link" href=""><b>Web
@@ -94,7 +94,7 @@
 
                                 </div>
                                 <div class="box content" style="text-align: left;  color: #313C41;padding-left: 10px;">
-                                    {{movies_name[0]}}
+                                    {{MEHAF}}
                                 </div>
                                 <div class="box footer" style="text-align: left;  color: #313C41;padding-left: 10px;">
                                     <b>Budget 70.00
@@ -103,7 +103,7 @@
 
                             </div>
                             
-                            {% endfor %}
+                           <!-- {% endfor %}-->
                            
                           <!--   <div class="wrapper"
                                 style=" background:#EFF3F8;width:fit-content;height: fit-content;margin-bottom: 20px;">
