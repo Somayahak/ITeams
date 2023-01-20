@@ -61,7 +61,7 @@
     </div>
          
         <!-- Recommneded Projects -->
-        <form action="..//HTML/.html">
+        <!-- <form action="..//HTML/.html"> -->
        <from action= "..//HTML/findProject.php" method="POST">
             <div class="containers" style="height:670px; margin-bottom:50px;  margin-top:50px">
                 <div class="card flex" style="height:730px; background-color: #fff;width: 800px; border-radius: 20px;">
@@ -95,7 +95,7 @@
 
                                 </div>
                                 <div class="box content" style="text-align: left;  color: #313C41;padding-left: 10px;">
-                                    {{movies_name[j]}}
+                                    {{movies_name[0]}}
                                 </div>
                                 <div class="box footer" style="text-align: left;  color: #313C41;padding-left: 10px;">
                                     <b>Budget 70.00
@@ -189,7 +189,7 @@
             </div>
             </div>
         </form>
-       </form>   
+     <!--  </form> -->  
         <!-- </div> -->
     </main>
 
