@@ -44,14 +44,14 @@
 
         <!-- Search -->
         <div class="containers" style="height:120px; margin-bottom:50px;  margin-top:30px">
-        <div class="containers" style="border-radius: 10px;height:100px; background-color: #fff;width:800px;">
+        <div class="containers" style="border-radius: 20px;height:100px; background-color: #fff;width:800px;">
             <form action="..//HTML/.html">
                 <div class="container">
                     <!--textbox-->
                     <label for="search"><b style="color:#703589;">Browse</b>
                         <br>
                         <input type="text" id="search" name="search"
-                            style="width:300px;border: 1.5px solid #313C41; color: black;background-color: #EFF3F8;border-radius: 10px;height: 30px;font-size: 12px;" placeholder="Search For Projects"
+                            style="width:600px;border: 1.5px solid #313C41; color: black;background-color: #EFF3F8;border-radius: 10px; margin-right: 10px; height: 30px;font-size: 12px;" placeholder="Search For Projects"
                             required="required">
                         <button
                             style="width:80px; border-radius: 20px; height:30px;background-color: #6CBBD2;font-size:12px;text-align:justify;">Search</button>
@@ -63,7 +63,7 @@
         <form action="..//HTML/.html">
 
             <div class="containers" style="height:670px; margin-bottom:50px;  margin-top:50px">
-                <div class="card flex" style="height:730px; background-color: #fff;width: 800px; border-radius: 10px;">
+                <div class="card flex" style="height:730px; background-color: #fff;width: 800px; border-radius: 20px;">
                     <label for="freeform" style="font-size: 20px; color:#703589;"><b>Recommended Projects</b></label>
                     <div class="px-3 ex1" style="height: inherit; margin-top: 5px;">
                         <div class="flex-container-v" style="padding: 10px; background-color:#fff;">
