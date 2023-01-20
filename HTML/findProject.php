@@ -43,8 +43,8 @@
         </header>
 
         <!-- Search -->
-        <div class="containers" style="height:670px; margin-bottom:50px;  margin-top:50px">
-        <div class="containers" style="border-radius: 10px;height:100px; background-color: #fff;width:800px;margin-left: 300px;margin-bottom: 70px;">
+        <div class="containers" style="height:150px; margin-bottom:50px;  margin-top:30px">
+        <div class="containers" style="border-radius: 10px;height:100px; background-color: #fff;width:800px;">
             <form action="..//HTML/.html">
                 <div class="container">
                     <!--textbox-->
