@@ -12,28 +12,32 @@ def recommend():
     for i in destances[1:]:
        recomended_movies_name.append(movies.iloc[i[0]].description)
     return recomended_movies_name
+
 app = Flask(__name__)
 
 @app.route('/')
 def home():
     return render_template('index.php')
 
-@app.route('../HTML/findProject.php', methods =['GET','POST'])
+@app.route('../HTML/findProject.php')
 def recommendation():
     movies_list = movies["jobdescription"].values
-    status= False
-    if request.method == "GET":
+    #status= False
+   # if request.method == "GET":
         try:
             #if request.form:
                 #movies_name = request.form['movies']
                 recomended_movies_name = recommend()
-                status=True
+                #status=True
 
-                return render_template("../HTML/findProject.php", movies_name = recomended_movies_name, movies_list= movies_list, status= status)
+                return render_template("../HTML/findProject.php", movies_name = recomended_movies_name, movies_list= movies_list)
 
         except Exception as e:
             error={'error', e}
-            return render_template("../HTML/findProject.php", error = error,movies_list=movies_list, status= status)
+            return render_template("../HTML/findProject.php", error = error,movies_list=movies_list)
 
     else:
-     return render_template("../HTML/findProject.php", movies_list=movies_list, status= status)
+     return render_template("../HTML/findProject.php", movies_list=movies_list)
+
+if __name__ == '__main__':
+    app.run()
