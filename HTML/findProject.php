@@ -43,6 +43,7 @@
         </header>
 
         <!-- Search -->
+        <div class="containers" style="height:670px; margin-bottom:50px;  margin-top:50px">
         <div class="containers" style="border-radius: 10px;height:100px; background-color: #fff;width:800px;margin-left: 300px;margin-bottom: 70px;">
             <form action="..//HTML/.html">
                 <div class="container">
@@ -54,7 +55,7 @@
                             required="required">
                         <button
                             style="width:80px; border-radius: 20px; height:30px;background-color: #6CBBD2;font-size:12px;text-align:justify;">Search</button>
-                            
+                        </div>              
                 </div>
             </form>
     </div>
