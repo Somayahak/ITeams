@@ -1,10 +1,11 @@
 <?php
 require '../php/connect.php';
 if(!empty($_SESSION["Email"])){
-    $Email = $_SESSION["Email"];
-    $query = "SELECT * FROM users WHERE email = '{$Email}'";
-    $result = mysqli_query($conn, $query);
-    $row = mysqli_fetch_assoc($result); 
+	$userId=$_SESSION['userId'];
+	$Email = $_SESSION["Email"];
+	$query = "SELECT * FROM users WHERE email = '{$Email}'";
+	$result = mysqli_query($conn, $query);
+	$row = mysqli_fetch_assoc($result); 
 }
 else{
   header("..//HTML/logIn.html");
@@ -114,7 +115,9 @@ else{
 		
             <div class="containers" style="height:1000px; margin-bottom:50px;  margin-top:50px">
                 <div class="card flex" style="height:1100px; background-color: #fff;width: 800px; border-radius: 20px;">
-			<b style="font-size: 25px; color:#703589;">Edit Profile</b>
+			<b style="font-size: 25px; color:#703589;">Edit Profile
+			<?php echo $userId; ?>
+			</b>
 			</br>
 			<b style=color:#313C41>Account Information:</b>
 			<div class="dropdown-divider"></div>
