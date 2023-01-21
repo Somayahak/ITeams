@@ -53,7 +53,7 @@ else{
 	body {
 		background-color: #313C41;
 	}
-/*         .multi-select{
+        .multi-select{
             width:200px;
             background-color:red;
             color:red;
@@ -64,7 +64,7 @@ else{
         .overSelect{
             positoin:absolute;
             left:0; right:0; top:0; bottom:0;
-        } */
+        }
         #checkboxes{
             display:none;
             border:1px #313C41 solid;
@@ -162,7 +162,7 @@ else{
                                 </select>
                             </div>
 		    
-<!-- 		    
+		    
 		    	<label for="Skills"><b style=color:#703589>Skills</b></label>
 		    	<div class="multiselect">
 			<div class="selectBox" onclick="showCheckboxes()">
@@ -199,7 +199,7 @@ else{
 		
 					<label for="description" style="font-size: 15px; color:#703589;"><b>User Description</b></label>
 		        		<textarea id="freeform" name="description" style="background-color:#e0d9ef;border-radius: 5px; resize:none; margin-bottom: 30px;height:400px; padding:12px 20px;"><?php echo $row['userDescription'];?></textarea>
- -->
+
 		
                     <center>
                         <input type="submit" value="Save" name="post_project" 
