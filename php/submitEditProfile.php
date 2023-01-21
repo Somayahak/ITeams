@@ -20,10 +20,10 @@ $description = $_POST['description'];
 
 ///////////    $id=$_SESSION['id'];
 
-  $select= "select * from users where userId='$userId'";
-  $sql = mysqli_query($conn,$select);
-  $row = mysqli_fetch_assoc($sql);
-  $res= $row['userId'];
+//   $select= "select * from users where userId='$userId'";
+//   $sql = mysqli_query($conn,$select);
+//   $row = mysqli_fetch_assoc($sql);
+//   $res= $row['userId'];
 //   if($res === $userId)
 //   {
      $update = "update users set  firstName='$firstname',lastName='$lastname' where userId='33'";
