@@ -148,7 +148,7 @@ else{
 		    	<b style=color:#313C41>Profile Information:</b>
 			<div class="dropdown-divider"></div>
 		   
-		    	<label for="education"><b style=color:#313C41>Education</b></label><span
+		    	<label for="education"><b style=color:#703589>Education</b></label><span
 			<select id="education" name="education" style="width: 100%; height:50px; resize:none padding:12px 20px; border-radius: 10px;margin: 8px 0;display: inline-block;border: 1px solid #ccc; box-sizing: border-box;" required>
 			    <option value="" disabled selected value>-- Please select --</option>
 			    <option value="Undergraduate">Undergraduate</option>
@@ -157,7 +157,7 @@ else{
 			    <option value="Doctoral Degree">Doctoral Degree</option>
 			</select>
 		    
-		    
+<!-- 		    
 		    	<label for="Skills"><b style=color:#703589>Skills</b></label>
 		    	<div class="multiselect">
 			<div class="selectBox" onclick="showCheckboxes()">
@@ -194,7 +194,7 @@ else{
 		
 					<label for="description" style="font-size: 15px; color:#703589;"><b>User Description</b></label>
 		        		<textarea id="freeform" name="description" style="background-color:#e0d9ef;border-radius: 5px; resize:none; margin-bottom: 30px;height:400px; padding:12px 20px;"><?php echo $row['userDescription'];?></textarea>
-
+ -->
 		
                     <center>
                         <input type="submit" value="Save" name="post_project" 
