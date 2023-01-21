@@ -149,7 +149,6 @@ else{
     
                             </div>
                             </div>
-                            </div>
 		
 		
                     <center>
@@ -170,9 +169,9 @@ else{
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Core theme JS-->
     <script src="js/scripts.js"></script>
-    </script>
-    <script src="..\js\multi-input.js"></script>
-    <script src="..\js\script.js"></script>
+<!--     </script> -->
+<!--     <script src="..\js\multi-input.js"></script> -->
+<!--     <script src="..\js\script.js"></script>
                                     <script>
                                     const plus = document.querySelector(".plus"),
                                         minus = document.querySelector(".minus"),
@@ -206,7 +205,7 @@ else{
             expanded=false;
         }
     }
-    </script>
+    </script> -->
 </body>
 
 </html>
