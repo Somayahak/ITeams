@@ -53,7 +53,7 @@ else{
 	body {
 		background-color: #313C41;
 	}
-        .multi-select{
+/*         .multi-select{
             width:200px;
             background-color:red;
             color:red;
@@ -64,7 +64,7 @@ else{
         .overSelect{
             positoin:absolute;
             left:0; right:0; top:0; bottom:0;
-        }
+        } */
         #checkboxes{
             display:none;
             border:1px #313C41 solid;
