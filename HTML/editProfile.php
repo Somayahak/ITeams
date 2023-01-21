@@ -49,10 +49,10 @@ else{
 
 	</script>
 
-		<style>
-		body {
-			background-color: #313C41;
-		}
+	<style>
+	body {
+		background-color: #313C41;
+	}
         .multi-select{
             width:200px;
             background-color:red;
@@ -151,41 +151,39 @@ else{
 			<label for="description" style="font-size: 15px; color:#703589;"><b>User Description</b></label>
 		        <textarea id="freeform" name="description" style="background-color:#e0d9ef;border-radius: 5px; resize:none; margin-bottom: 30px;height:400px; padding:12px 20px;"><?php echo $row['userDescription'];?></textarea>
 
-		                                    <label for="Skills"><b style=color:#313C41>Skills</b></label><span style="color:#703589"> *</span>
-                            <div class="multiselect">
-                                <div class="selectBox" onclick="showCheckboxes()">
-                                    <select style="width: 100%; height:50px; resize:none padding:12px 20px; border-radius: 10px;margin: 8px 0;display: inline-block;border: 1px solid #ccc; box-sizing: border-box;">
-                                        <option value="" disabled selected value>-- Please select --</option>
-                                            </select>
-                                            <div class="overSelect"></div>
-                                            </div>
-                                            <div class="ex1" id="checkboxes" style="height:100px; color:black ">
-                                                <optgroup label="Data analysis"></optgroup>
-                                                <label for="1"><input type="checkbox" name="skills[]" value="SQL" id="1">SQL</label>
-                                                <label for="2"><input type="checkbox" name="skills[]" value="Statistics" id="2">Statistics</label>
-                                                <label for="3"><input type="checkbox" name="skills[]" value="Python" id="3">Python</label>
-                                                <optgroup label="Programming"></optgroup>
-                                                <label for="3"><input type="checkbox" name="skills[]" value="Python" id="3">Python</label>
-                                                <label for="4"><input type="checkbox" name="skills[]" value="C++" id="4">C++</label>
-                                                <label for="5"><input type="checkbox" name="skills[]" value="JavaScript" id="5">JavaScript</label>
-                                                <label for="6"><input type="checkbox" name="skills[]" value="Ruby" id="6">Ruby</label>
-                                                <label for="7"><input type="checkbox" name="skills[]" value="PowerShell" id="7">PowerShell</label>
-                                                <optgroup label="Machine learning"></optgroup>
-                                                <label for="8"><input type="checkbox" name="skills[]" value="Kernels" id="8">Kernels</label>
-                                                <label for="9"><input type="checkbox" name="skills[]" value="Clustering" id="9">Clustering</label>
-                                                <label for="10"><input type="checkbox" name="skills[]" value="Deep learning" id="10">Deep  learning</label>
-                                                <optgroup label="Systems and networks"></optgroup>
-                                                <label for="11"><input type="checkbox" name="skills[]" value="Windows" id="11">Windows</label>
-                                                <label for="12"><input type="checkbox" name="skills[]" value="Linux" id="12">Linux</label>
-                                                <label for="13"><input type="checkbox" name="skills[]" value="Mac" id="13">Mac</label> 
-                                                <optgroup label="Web developer"></optgroup>
-                                                <label for="14"><input type="checkbox" name="skills[]" value="HTML" id="14">HTML</label>
-                                                <label for="15"><input type="checkbox" name="skills[]" value="CSS" id="15">CSS</label>
-                                                <label for="5"><input type="checkbox" name="skills[]" value="JavaScript" id="5">JavaScript</label>
-    
-                            </div>
-                            </div>
-		
+		    	<label for="Skills"><b style=color:#313C41>Skills</b></label><span style="color:#703589"> *</span>
+		    <div class="multiselect">
+			<div class="selectBox" onclick="showCheckboxes()">
+			    	<select style="width: 100%; height:50px; resize:none padding:12px 20px; border-radius: 10px;margin: 8px 0;display: inline-block;border: 1px solid #ccc; box-sizing: border-box;">
+				<option value="" disabled selected value>-- Please select --</option>
+				    </select>
+				    <div class="overSelect"></div>
+				    </div>
+				    <div class="ex1" id="checkboxes" style="height:100px; color:black ">
+					<optgroup label="Data analysis"></optgroup>
+					<label for="1"><input type="checkbox" name="skills[]" value="SQL" id="1">SQL</label>
+					<label for="2"><input type="checkbox" name="skills[]" value="Statistics" id="2">Statistics</label>
+					<label for="3"><input type="checkbox" name="skills[]" value="Python" id="3">Python</label>
+					<optgroup label="Programming"></optgroup>
+					<label for="3"><input type="checkbox" name="skills[]" value="Python" id="3">Python</label>
+					<label for="4"><input type="checkbox" name="skills[]" value="C++" id="4">C++</label>
+					<label for="5"><input type="checkbox" name="skills[]" value="JavaScript" id="5">JavaScript</label>
+					<label for="6"><input type="checkbox" name="skills[]" value="Ruby" id="6">Ruby</label>
+					<label for="7"><input type="checkbox" name="skills[]" value="PowerShell" id="7">PowerShell</label>
+					<optgroup label="Machine learning"></optgroup>
+					<label for="8"><input type="checkbox" name="skills[]" value="Kernels" id="8">Kernels</label>
+					<label for="9"><input type="checkbox" name="skills[]" value="Clustering" id="9">Clustering</label>
+					<label for="10"><input type="checkbox" name="skills[]" value="Deep learning" id="10">Deep  learning</label>
+					<optgroup label="Systems and networks"></optgroup>
+					<label for="11"><input type="checkbox" name="skills[]" value="Windows" id="11">Windows</label>
+					<label for="12"><input type="checkbox" name="skills[]" value="Linux" id="12">Linux</label>
+					<label for="13"><input type="checkbox" name="skills[]" value="Mac" id="13">Mac</label> 
+					<optgroup label="Web developer"></optgroup>
+					<label for="14"><input type="checkbox" name="skills[]" value="HTML" id="14">HTML</label>
+					<label for="15"><input type="checkbox" name="skills[]" value="CSS" id="15">CSS</label>
+					<label for="5"><input type="checkbox" name="skills[]" value="JavaScript" id="5">JavaScript</label>
+		    </div>
+		    </div>
 		
                     <center>
                         <input type="submit" value="Save" name="post_project" 
@@ -205,30 +203,8 @@ else{
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Core theme JS-->
     <script src="js/scripts.js"></script>
-<!--     </script> -->
-<!--     <script src="..\js\multi-input.js"></script> -->
-<!--     <script src="..\js\script.js"></script>
-                                    <script>
-                                    const plus = document.querySelector(".plus"),
-                                        minus = document.querySelector(".minus"),
-                                        num = document.querySelector(".num");
-                                    let a = 1;
-                                    plus.addEventListener("click", () => {
-                                        a++;
-                                        a = (a < 10) ? "0" + a : a;
-                                        num.innerText = a;
-                                    });
-
-                                    minus.addEventListener("click", () => {
-                                        if (a > 1) {
-                                            a--;
-                                            a = (a < 10) ? "0" + a : a;
-                                            num.innerText = a;
-                                        }
-                                    });
-
-                                </script>
-                                 <script>
+	
+    <script>
     var expanded=false;
     function showCheckboxes(){
         var checkboxes=document.getElementById("checkboxes")
@@ -241,7 +217,7 @@ else{
             expanded=false;
         }
     }
-    </script> -->
+    </script>
 </body>
 
 </html>
