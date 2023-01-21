@@ -165,7 +165,7 @@ else{
 		    	<div class="multiselect">
 			<div class="selectBox" onclick="showCheckboxes()">
 			    	<select style="width: 100%; height:50px; resize:none padding:12px 20px; border-radius: 10px;margin: 8px 0;display: inline-block;border: 1px solid #ccc; box-sizing: border-box;">
-				<option value="" disabled selected value>-- Please select --</option>
+				<option value="" selected disabled hidden>-- Please select --</option>
 				    </select>
 				    <div class="overSelect"></div>
 				    </div>
