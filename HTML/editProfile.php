@@ -49,6 +49,42 @@ else{
 
 	</script>
 
+		<style>
+		body {
+			background-color: #313C41;
+		}
+        .multi-select{
+            width:200px;
+            background-color:red;
+            color:red;
+        }
+        .selectBox select{
+            width:100%;
+        }
+        .overSelect{
+            positoin:absolute;
+            left:0; right:0; top:0; bottom:0;
+        }
+        #checkboxes{
+            display:none;
+            border:1px #313C41 solid;
+            background-color:white;
+        }
+        #checkboxes: hover{
+            background-color: grey;
+              color: #212529;
+        }  
+        #checkboxes label{
+            display:block;
+        }
+        #checkboxes label: hover{
+        background-color:red;
+        }   
+        #message{
+        display:none;
+        }  
+         
+	</style>
 </head>
 
 <body class="d-flex flex-column h-100" style="background-color: #313C41">
