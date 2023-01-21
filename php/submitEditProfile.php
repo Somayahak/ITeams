@@ -27,17 +27,22 @@ $description = $_POST['description'];
 //   if($res === $userId)
 //   {
      $update = "update users set  firstName='$firstname',lastName='$lastname' where userId='33'";
-       $sql2=mysqli_query($conn,$update);
-    if($sql2)
-       { 
-           /*Successful*/
-           header('location:profile.php');
-       }
-       else
-       {
-           /*sorry your profile is not update*/
-           header('location:editProfile.php');
-       }
+//        $sql2=mysqli_query($conn,$update);
+    echo "<script>
+    alert('Updated Successfuly');
+    window.location.href='..//HTML/profile.php';
+    </script>";
+//     }
+//     if($sql2)
+//        { 
+//            /*Successful*/
+//            header('location:profile.php');
+//        }
+//        else
+//        {
+//            /*sorry your profile is not update*/
+//            header('location:editProfile.php');
+//        }
 //     }
 
 //     else
