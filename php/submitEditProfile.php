@@ -28,13 +28,18 @@ $description = $_POST['description'];
 //   }
 
 // else{
-$sql = "INSERT INTO users (firstName, lastName, email, phone, userDescription)
+$userId=$row["userId"];
+
+$sql = "INSERT INTO users WHERE projectUserId='$userId' (firstName, lastName, email, phone, userDescription)
 VALUES ('$firstname','$lastname','$Email','$Phone','$description')";
+
+$sql = "UPDATE users SET firstName = '$firstName', desiredWeight = 145 WHERE id = 1;"
+
 
 if ($conn->query($sql)){
     echo "<script>
     alert('Profile Updated Successfuly');
-    window.location.href='..//HTML/logIn.html';
+    window.location.href='..//HTML/profile.php';
     </script>";
     }
 // }
