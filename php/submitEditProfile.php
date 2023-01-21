@@ -1,8 +1,14 @@
 <?php
 require 'connect.php';
-if(empty($_SESSION["email"])){
-  header("Location: ..//HTML/logIn.html");
-} 
+if(!empty($_SESSION["Email"])){
+    $Email = $_SESSION["Email"];
+    $query = "SELECT * FROM users WHERE email = '{$Email}'";
+    $result = mysqli_query($conn, $query);
+    $row = mysqli_fetch_assoc($result); 
+}
+else{
+  header("..//HTML/logIn.html");
+}
 
 $userId=$_SESSION['userId'];
 $Email = $_POST['email'];
