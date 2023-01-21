@@ -1,8 +1,8 @@
 <?php
 require 'connect.php';
-// if(empty($_SESSION["email"])){
-//   header("Location: ..//HTML/logIn.html");
-// } 
+if(empty($_SESSION["email"])){
+  header("Location: ..//HTML/logIn.html");
+} 
 
 $Email = $_POST['email'];
 // $Password = $_POST['Password'];
@@ -28,7 +28,7 @@ $description = $_POST['description'];
 //   }
 
 // else{
-$sql = "INSERT INTO users WHERE (firstName, lastName, email, phone, userDescription)
+$sql = "INSERT INTO users (firstName, lastName, email, phone, userDescription)
 VALUES ('$firstname','$lastname','$Email','$Phone','$description')";
 
 if ($conn->query($sql)){
