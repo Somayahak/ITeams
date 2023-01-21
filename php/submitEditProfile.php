@@ -28,10 +28,10 @@ $description = $_POST['description'];
 //   {
      $sql = "update users set  firstName='$firstname',lastName='$lastname' where userId='33'";
 //        $sql2=mysqli_query($conn,$update);
-    echo "<script>
-    alert('Updated Successfuly');
-    window.location.href='..//HTML/profile.php';
-    </script>";
+//     echo "<script>
+//     alert('Updated Successfuly');
+//     window.location.href='..//HTML/profile.php';
+//     </script>";
 //     }
 //     if($sql2)
 //        { 
