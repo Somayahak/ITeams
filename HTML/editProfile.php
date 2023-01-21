@@ -112,8 +112,8 @@ else{
 
 
 		
-            <div class="containers" style="height:850px; margin-bottom:50px;  margin-top:50px">
-                <div class="card flex" style="height:910px; background-color: #fff;width: 800px; border-radius: 20px;">
+            <div class="containers" style="height:900px; margin-bottom:50px;  margin-top:50px">
+                <div class="card flex" style="height:960px; background-color: #fff;width: 800px; border-radius: 20px;">
 			<b style="font-size: 25px; color:#703589;">Edit Profile</b>
 			</br>
 			<b style=color:#313C41>Account Information:</b>
@@ -150,9 +150,7 @@ else{
 		   
                             <div class="formcontrol">
                                 <!--dropdown select-->
-                                <label for="education"><b style=color:#313C41>Education</b></label><span
-                                    style="color:#703589"> *</span>
-                                <br />
+                                <label for="education"><b style=color:#703589>Education</b></label>
                                 <select id="education" name="education" style="width: 100%; height:50px; resize:none padding:12px 20px; border-radius: 10px;margin: 8px 0;display: inline-block;border: 1px solid #ccc; box-sizing: border-box;" required>
                                     <option value="" disabled selected value>-- Please select --</option>
                                     <option value="Undergraduate">Undergraduate</option>
@@ -162,7 +160,7 @@ else{
                                 </select>
                             </div>
 		    
-		    
+		    </br>
 		    	<label for="Skills"><b style=color:#703589>Skills</b></label>
 		    	<div class="multiselect">
 			<div class="selectBox" onclick="showCheckboxes()">
@@ -196,7 +194,7 @@ else{
 					<label for="5"><input type="checkbox" name="skills[]" value="JavaScript" id="5">JavaScript</label>
 			    </div>
 			    </div>
-		
+		</br>
 					<label for="description" style="font-size: 15px; color:#703589;"><b>User Description</b></label>
 		        		<textarea id="freeform" name="description" style="background-color:#e0d9ef;border-radius: 5px; resize:none; margin-bottom: 30px;height:400px; padding:12px 20px;"><?php echo $row['userDescription'];?></textarea>
 
