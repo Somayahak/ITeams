@@ -26,7 +26,7 @@ $description = $_POST['description'];
 //   $res= $row['userId'];
 //   if($res === $userId)
 //   {
-     $update = "update users set  firstName='$firstname',lastName='$lastname' where userId='33'";
+     $sql = "update users set  firstName='$firstname',lastName='$lastname' where userId='33'";
 //        $sql2=mysqli_query($conn,$update);
     echo "<script>
     alert('Updated Successfuly');
