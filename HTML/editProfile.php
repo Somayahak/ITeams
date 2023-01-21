@@ -1,7 +1,6 @@
 <?php
 require '../php/connect.php';
 if(!empty($_SESSION["Email"])){
-	$userId=$_SESSION['userId'];
 	$Email = $_SESSION["Email"];
 	$query = "SELECT * FROM users WHERE email = '{$Email}'";
 	$result = mysqli_query($conn, $query);
@@ -115,9 +114,7 @@ else{
 		
             <div class="containers" style="height:1000px; margin-bottom:50px;  margin-top:50px">
                 <div class="card flex" style="height:1100px; background-color: #fff;width: 800px; border-radius: 20px;">
-			<b style="font-size: 25px; color:#703589;">Edit Profile
-			<?php echo $userId; ?>
-			</b>
+			<b style="font-size: 25px; color:#703589;">Edit Profile</b>
 			</br>
 			<b style=color:#313C41>Account Information:</b>
 			<div class="dropdown-divider"></div>
