@@ -152,7 +152,7 @@ else{
                                 <!--dropdown select-->
                                 <label for="education"><b style=color:#703589>Education</b></label>
                                 <select id="education" name="education" style="width: 100%; height:50px; resize:none padding:12px 20px; border-radius: 10px;margin: 8px 0;display: inline-block;border: 1px solid #ccc; box-sizing: border-box;" required>
-                                    <option value="" disabled selected value>-- Please select --</option>
+                                    <option value="" disabled selected value><?php echo $row['education'];?></option>
                                     <option value="Undergraduate">Undergraduate</option>
                                     <option value="Bachelor Degree">Bachelor Degree</option>
                                     <option value="Master Degree">Master Degree</option>
