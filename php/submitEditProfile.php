@@ -24,9 +24,9 @@ $description = $_POST['description'];
   $sql = mysqli_query($conn,$select);
   $row = mysqli_fetch_assoc($sql);
   $res= $row['userId'];
-  if($res === $userId)
-  {
-     $update = "update users set fname='$firstname',lname='$lastname' where userId='$userId'";
+//   if($res === $userId)
+//   {
+     $update = "update users set fname='$firstname',lname='$lastname' where userId='33'";
        $sql2=mysqli_query($conn,$update);
     if($sql2)
        { 
@@ -38,13 +38,13 @@ $description = $_POST['description'];
            /*sorry your profile is not update*/
            header('location:editProfile.php');
        }
-    }
+//     }
 
-    else
-    {
-        /*sorry your id is not match*/
-        header('location:login.html');
-    }
+//     else
+//     {
+//         /*sorry your id is not match*/
+//         header('location:login.html');
+//     }
     
     ////////////////////////////////////////////////////
 
