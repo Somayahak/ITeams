@@ -4,6 +4,7 @@ if(empty($_SESSION["email"])){
   header("Location: ..//HTML/logIn.html");
 } 
 
+$userId=$_SESSION['userId'];
 $Email = $_POST['email'];
 // $Password = $_POST['Password'];
 // $ConfPassword = $_POST['ConfPassword'];
@@ -17,7 +18,35 @@ $description = $_POST['description'];
 // $theskills = implode(",",$skills);
 // $task = $_POST['task'];
 
-///////////////////////////////////////////////////////////////
+///////////    $id=$_SESSION['id'];
+
+  $select= "select * from users where userId='$userId'";
+  $sql = mysqli_query($conn,$select);
+  $row = mysqli_fetch_assoc($sql);
+  $res= $row['userId'];
+  if($res === $userId)
+  {
+     $update = "update users set fname='$firstname',lname='$lastname' where userId='$userId'";
+       $sql2=mysqli_query($conn,$update);
+    if($sql2)
+       { 
+           /*Successful*/
+           header('location:profile.php');
+       }
+       else
+       {
+           /*sorry your profile is not update*/
+           header('location:editProfile.php');
+       }
+    }
+
+    else
+    {
+        /*sorry your id is not match*/
+        header('location:login.html');
+    }
+    
+    ////////////////////////////////////////////////////
 
 //   $duplicate = mysqli_query($conn, "SELECT * FROM users WHERE email = '$Email'");
 //   if(mysqli_num_rows($duplicate) > 0){
@@ -28,12 +57,11 @@ $description = $_POST['description'];
 //   }
 
 // else{
-$userId=$row["userId"];
 
-$sql = "INSERT INTO users WHERE projectUserId='$userId' (firstName, lastName, email, phone, userDescription)
-VALUES ('$firstname','$lastname','$Email','$Phone','$description')";
+// $sql = "INSERT INTO users WHERE projectUserId='$userId' (firstName, lastName, email, phone, userDescription)
+// VALUES ('$firstname','$lastname','$Email','$Phone','$description')";
 
-$sql = "UPDATE users SET firstName = '$firstName', desiredWeight = 145 WHERE id = 1;"
+// $sql = "UPDATE users SET firstName = '$firstName', desiredWeight = 145 WHERE id = 1;"
 
 
 if ($conn->query($sql)){
